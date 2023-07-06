@@ -19,13 +19,13 @@ auto_replace = true
 img_max_width = '100%'
 
 # [可暂时不填，但正式发布博客到网上时必填] 博客网址，用于 RSS feed
-website = '''yinan-c.github.io/'''
+website = '''yinan.me/'''
 
 # 请填写以上项目
 # 以下项目一般由程序自动填写，不需要手动操作
 
 # RSS feed 的网址 [一般根据 website 自动生成]
-rss_link = '''yinan-c.github.io/atom.xml'''
+rss_link = '''yinan.me/atom.xml'''
 
 # [手动修改无效] 当前主题 (CSS)
 current_theme = 'new'
@@ -34,7 +34,7 @@ current_theme = 'new'
 uuid = 'ba15f2bcfa5336d8d2f005c8f0aa7951c3b52e50'
 
 # [一般不手动修改] 上次生成 RSS feed 的时间
-rss_updated = '2023-07-06 19:55:34+01:00'
+rss_updated = '2023-07-06 20:50:53+01:00'
 
 # [一般不手动修改] 博客更新日期，如果大于 rss_updated 就要重新生成 RSS
-blog_updated = '2023-07-06 19:55:34+01:00'
+blog_updated = '2023-07-06 20:50:53+01:00'
