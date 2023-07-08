@@ -21,10 +21,10 @@
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div id="created-at">
-        <span style="font-size: 1em; color: #888;">{{ art.ctime[0:10] }} </span>
+        <span style="font-size: 0.7 em; color: #888;">{{ art.ctime[0:10] }} </span>
     </div>
 
-    <div id="footer-home-link">
+    <div id="footer-home-link" style="font-size: 0.7 em;">
         <a href="index.html">&lt;&lt; Home</a>
         {% if not art.ignored %}
         <a href="years.html">&lt;&lt; Timeline</a>
@@ -41,8 +41,8 @@
 {{ art.content|safe }}
 
 <div id="updated-at" style="display: flex; justify-content: space-between;">
-  <span>Created at {{ art.ctime[0:19] }}</span>
-  <span>Updated at {{ art.mtime[0:19] }}</span>
+  <span>Created on {{ art.ctime[0:10] }}</span>
+  <span>Updated on {{ art.mtime[0:10] }}</span>
 </div>
 {% endblock %}
 
@@ -62,9 +62,9 @@
     {% else %}
     Author: <a href = "{{ blog.website }}">{{ blog.author }}</a>
     {% endif %}
-    | LICENSE: <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" alt="Creative Commons Licence" width="45" style="vertical-align: text-top;" ></a>
-    | RSS <a href="atom.xml"><img src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png" alt="RSS" width="15" height="15" style="vertical-align: text-top;"></a>
+    <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" alt="Creative Commons Licence" width="45" style="vertical-align: text-top;" ></a>
     | Powered by <a href="https://github.com/ahui2016/pyboke"><img src="pics/github-mark.png" alt="GitHub" width="15" height="15" style="vertical-align: text-top;"> PyBoke</a>
+    <a href="atom.xml"><img src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png" alt="RSS" width="15" height="15" style="vertical-align: text-top;"></a>
   </p>
 </div>
 {% endblock %}
