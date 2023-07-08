@@ -18,16 +18,30 @@
 {% endblock %}
 
 {% block header %}
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div id="created-at">
+        <span style="font-size: 1em; color: #888;">{{ art.ctime[0:10] }} </span>
+    </div>
+
+    <div id="footer-home-link">
+        <a href="index.html">&lt;&lt; Home</a>
+        {% if not art.ignored %}
+        <a href="years.html">&lt;&lt; Timeline</a>
+        |
+        <a href="random.html">Random &gt;&gt;</a>
+        {% endif %}
+    </div>
+</div>
+
 {% endblock %}
 
 {% block main %}
-<div id="back-home">
-  <a href="index.html">&lt;&lt; Home</a>
-</div>
 
 {{ art.content|safe }}
 
-<div id="updated-at">
+<div id="updated-at" style="display: flex; justify-content: space-between;">
+  <span>Created at {{ art.ctime[0:19] }}</span>
   <span>Updated at {{ art.mtime[0:19] }}</span>
 </div>
 {% endblock %}
@@ -44,9 +58,9 @@
   </div>
   <p id="footer-body">
     {% if art.author|length %}
-    Author: {{ art.author }}
+    Author: {{ art.author }}</a>
     {% else %}
-    Author: {{ blog.author }}
+    Author: <a href = "{{ blog.website }}">{{ blog.author }}</a>
     {% endif %}
     | LICENSE: <a href="http://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" alt="Creative Commons Licence" width="45" style="vertical-align: text-top;" ></a>
     | RSS <a href="atom.xml"><img src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png" alt="RSS" width="15" height="15" style="vertical-align: text-top;"></a>
