@@ -1,7 +1,5 @@
 # Setting up Globus endpoint for your servers
 
-Yinan, June 2023
-
 This instruction is for setting up a [Globus](https://app.globus.org/) endpoint for your servers. I have tested two clusters/supercomputers that I use. In principle, you should test it on your clusters.
 
 > With Globus, you can easily, reliably and securely move, share, & discover data no matter where it lives – from a supercomputer, lab cluster, tape archive, public cloud or laptop. Access and manage all your data, even protected data, from anywhere, using your existing identities, with just a web browser. [from Globus](https://www.globus.org/what-we-do)
