@@ -33,3 +33,13 @@ replace = 0
 pairs = [
 
 ]
+
+# 文章摘要
+abstract = '''Alfred Workflows
+Easy Homebrew
+
+An Alfred workflow for you to easy brew on Alfred -- Search, get details and run Homebrew commands.
+
+GitHub Star
+
+This workflow allows you to search through your GitHub stared repositories. Download from the official Alfred...'''
