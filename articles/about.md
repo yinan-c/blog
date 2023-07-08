@@ -1,4 +1,31 @@
-# Contact Me
+# About
 
-- Email: [yinan.email@gmail.com](mailto:yinan.email@gmail.com)
-- GitHub: [yinan-c](https://github.com/yinan-c)
+Hi, I am Yinan, a PhD student in Physics.
+ 
+Since I started my PhD, I have been reading and learning a lot, by writing down tons of notes and worklogs. Most of my notes are Markdown files stored in an app called [Obsidian](https://obsidian.md/).
+
+Since almost all of my notes are going digital now, it is not a bad idea to put them online. Also, I have been writing short articles in Chinese since very young, but hadn't had the chance to collect and share them with others. I have been thinking about starting a blog for a long time. 
+
+Now, I finally decided to start one, thanks to a great tool [PyBoke](https://github.com/ahui2016/pyboke), which makes it very easy to create a blog using Markdown files. I know other tools like WordPress and Hugo that can do the same thing, but I like the simplicity of PyBoke. 
+
+## About this blog
+
+This blog is created by a modified version of [PyBoke](https://github.com/yinan-c/pyboke). The original version is created by [ahui2016](https://github.com/ahui2016). 
+
+I write the articles in Markdown files, the templates and Markdown files I use on this website can also be found in the [GitHub repo](https://github.com/yinan-c/blog).
+
+I use the theme [newcss](https://newcss.net/), and publish the blog on [GitHub Pages](https://pages.github.com/).
+
+The articles I write are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You are free to: 
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+## What will I write here?
+
+I am interested in many things, including but not limited to: RSS, macOS softwares, Python ... As I browse the internet (mostly via RSS), interesting things will pop up and I am happy to share online here.
+
+## Thanks
+
+- Twitter logo icons created by [Md Tanvirul Haque - Flaticon](https://www.flaticon.com/free-icon/twitter_3670151)
+- Email icon from [freepnglogos.com](https://www.freepnglogos.com/images/email-13765.html)

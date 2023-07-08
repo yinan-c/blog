@@ -1,19 +1,19 @@
 # 本文件采用 TOML 格式 https://toml.io/
 
 # 文章标题 [请勿手动修改，会自动获取]
-title = '''About'''
+title = '''Contact Me'''
 
 # 文章作者 [通常留空，自动等同于博客作者]
 author = ''''''
 
 # 文章创建时间
-ctime = '2023-06-19 17:35:38+01:00'
+ctime = '2023-07-08 20:53:50+01:00'
 
 # 文章修改时间
-mtime = '2023-07-08 21:52:49+01:00'
+mtime = '2023-07-08 20:53:50+01:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = '9edb29ed162a429af567942ed6bc4d1f0ec4f064'
+checksum = 'b7a879752d89585bd011f3dbc46a703b4b286cef'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -35,6 +35,5 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''Hi, I am Yinan, a PhD student in Physics.
-Since I started my PhD, I have been reading and learning a lot, by writing down tons of notes and worklogs. Most of my notes are Markdown files stored in an app called Obsidian.
-Since almost all of my notes are goi...'''
+abstract = '''Email: yinan.email@gmail.com
+GitHub: yinan-c...'''
