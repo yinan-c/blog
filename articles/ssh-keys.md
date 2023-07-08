@@ -1,4 +1,4 @@
-# How to setup SSH keys for GitHub and remote servers?
+# Setup SSH keys for GitHub and remote servers
 
 ## Why using SSH keys?
 
