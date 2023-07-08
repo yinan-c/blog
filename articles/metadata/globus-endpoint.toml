@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2023-06-16 16:12:43+01:00'
 
 # 文章修改时间
-mtime = '2023-06-21 13:08:21+01:00'
+mtime = '2023-07-09 00:10:04+01:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = '410f054853029da1c630f076ffd4dde8a020c5d1'
+checksum = '6fa6d0f0602df66a7c98d5eecd5bf54c7d17f9b8'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -35,7 +35,6 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''Yinan, June 2023
-This instruction is for setting up a Globus endpoint for your servers. I have tested two clusters/supercomputers that I use. In principle, you should test it on your clusters.
+abstract = '''This instruction is for setting up a Globus endpoint for your servers. I have tested two clusters/supercomputers that I use. In principle, you should test it on your clusters.
 
-With Globus, you can easily, reliably and securely move, share...'''
+With Globus, you can easily, reliably and securely move, share, & discover data...'''
