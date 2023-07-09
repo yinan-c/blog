@@ -41,6 +41,7 @@
 
 {{ art.content|safe }}
 
+
 <style>
 .nav-button {
   padding: 10px 20px;
@@ -78,6 +79,7 @@
 }
 </style>
 
+{% if not art.ignored %}
 {% if art.prev %}
   <button class="nav-button" id="prev-button">
     <a href="{{ art.prev.id }}.html">Previous: {{ art.prev.title }}</a>
@@ -95,18 +97,20 @@
  <a href="index.html"> Reached the bottom! Take me Home!</a>
   </button>
 {% endif %}
+{% endif %}
 
 <br>
-
-<div id="updated-at" style="display: flex; justify-content: space-between;">
-  <span>Created on {{ art.ctime[0:10] }}</span>
-  <span>Updated on {{ art.mtime[0:10] }}</span>
-</div>
 
 {% endblock %}
 
 
 {% block footer %}
+
+<div id="updated-at">
+  <span>Created: {{ art.ctime[0:10] }}</span>
+  <span>Updated: {{ art.mtime[0:10] }}</span>
+</div>
+
 <div id="footer">
   <div id="footer-home-link">
     <a href="index.html">&lt; Home</a>
