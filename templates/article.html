@@ -51,14 +51,21 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
   transition-duration: 0.4s;
   border-radius: 5px;
-  width: 45%; /* Set the width to approximately half the page */
+  width: 48%; /* Set the width to approximately half the page */
   white-space: normal; /* Allow text to wrap onto a new line */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+
+@media (max-width: 600px) {
+  .nav-button {
+    font-size: 10px;  /* 在小屏幕上减小字体大小 */
+  }
 }
 
 .nav-button a {
@@ -72,17 +79,19 @@
 
 #prev-button {
   float: left;
+  text-align: left;
 }
 
 #next-button {
   float: right;
+  text-align: right;
 }
 </style>
 
 {% if not art.ignored %}
 {% if art.prev %}
   <button class="nav-button" id="prev-button">
-    <a href="{{ art.prev.id }}.html">Previous: {{ art.prev.title }}</a>
+    <a href="{{ art.prev.id }}.html">&lt; {{ art.prev.title }}</a>
   </button>
 {% else %}
 <button class="nav-button" id="prev-button">
@@ -90,7 +99,7 @@
 {% endif %}
 {% if art.next %}
   <button class="nav-button" id="next-button">
-    <a href="{{ art.next.id }}.html">Next: {{ art.next.title }}</a>
+    <a href="{{ art.next.id }}.html">{{ art.next.title }} &gt;</a>
   </button>
 {% else %}
   <button class="nav-button" id="next-button">

@@ -34,7 +34,7 @@ current_theme = 'new'
 uuid = 'ba15f2bcfa5336d8d2f005c8f0aa7951c3b52e50'
 
 # [一般不手动修改] 上次生成 RSS feed 的时间
-rss_updated = '2023-07-09 21:55:22+01:00'
+rss_updated = '2023-07-09 22:03:54+01:00'
 
 # [一般不手动修改] 博客更新日期，如果大于 rss_updated 就要重新生成 RSS
-blog_updated = '2023-07-09 21:55:22+01:00'
+blog_updated = '2023-07-09 22:03:54+01:00'
