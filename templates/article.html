@@ -51,7 +51,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   transition-duration: 0.4s;
@@ -64,7 +64,7 @@
 
 @media (max-width: 600px) {
   .nav-button {
-    font-size: 10px;  /* 在小屏幕上减小字体大小 */
+    font-size: 12px;  /* 在小屏幕上减小字体大小 */
   }
 }
 
@@ -90,21 +90,14 @@
 
 {% if not art.ignored %}
 {% if art.prev %}
-  <button class="nav-button" id="prev-button">
-    <a href="{{ art.prev.id }}.html">&lt; {{ art.prev.title }}</a>
-  </button>
+    <a href="{{ art.prev.id }}.html" class="nav-button" id="prev-button">&lt; {{ art.prev.title }}</a>
 {% else %}
-<button class="nav-button" id="prev-button">
-  <a href="index.html"> Reached the top! Take me Home!</a>
+  <a href="index.html" class="nav-button" id="prev-button"> Reached the top! Take me Home!</a>
 {% endif %}
 {% if art.next %}
-  <button class="nav-button" id="next-button">
-    <a href="{{ art.next.id }}.html">{{ art.next.title }} &gt;</a>
-  </button>
+    <a href="{{ art.next.id }}.html" class="nav-button" id="next-button">{{ art.next.title }} &gt;</a>
 {% else %}
-  <button class="nav-button" id="next-button">
- <a href="index.html"> Reached the bottom! Take me Home!</a>
-  </button>
+ <a href="index.html" class="nav-button" id="next-button"> Reached the bottom! Take me Home!</a>
 {% endif %}
 {% endif %}
 
