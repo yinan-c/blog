@@ -17,4 +17,4 @@
 
 ## 博客用了什么
 本博客的文章用 Markdown 编写。
-喜欢Python，喜欢简单，所以采用了开源方案 [pyboke](https://github.com/ahui2016/pyboke) 生成静态网站，使用的是 [newcss 主题](https://newcss.net/)，再通过 [GitHub Pages](https://pages.github.com/) 发布。
+采用了开源方案 [pyboke](https://github.com/ahui2016/pyboke) 生成静态网站，自己在此基础上加了点[其他功能](https://github.com/yinan-c/pyboke/tree/article-abstract-branch)，例如首页显示部分内容，文章底部翻页，RSS 格式。使用的是 [newcss 主题](https://newcss.net/)，再通过 [GitHub Pages](https://pages.github.com/) 发布。
