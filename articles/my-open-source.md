@@ -14,4 +14,6 @@
 
 - An Alfred 5 workflow to translate text using OpenAI, DeepL, Google, Bing, Baidu and Youdao. This workflow also supports [Universal Actions](https://www.alfredapp.com/universal-actions/).
 
+## [RSS-GPT](https://github.com/yinan-c/RSS-GPT)
 
+- Using ChatGPT to summarize your personalized RSS feeds.
