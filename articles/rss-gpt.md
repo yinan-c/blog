@@ -14,9 +14,9 @@ RSS 是我一直在用并且非常喜欢的信息获取方式，你可以把你�
 
 ## RSS 过滤
 
-在这种情况下，摆脱 [FOMO - Fear of missing out](https://en.wikipedia.org/wiki/Fear_of_missing_out) 的心态是很重要的。另外一个非常有效的方法就是，对 RSS 进行关键词过滤，只保留自己真正感兴趣愿意花时间阅读的内容。
+在这种情况下，摆脱 [FOMO - Fear of missing out](https://en.wikipedia.org/wiki/Fear_of_missing_out) 的心态是很重要的。一个非常有效的方法就是，对 RSS 进行关键词过滤，只保留自己真正感兴趣愿意花时间阅读的内容。
 
-我目前知道有两个小工具可以做到 RSS 过滤，https://siftrss.com, 另外还有一个 feedless.org。我只用过前一个体验很不错，可以根据 description 可以看到很多人都在用，作者也一直为爱发电。
+我目前知道有两个小工具可以做到 RSS 过滤，[SiftRSS](https://siftrss.com), 另外还有一个 [Feedless](https://feedless.org)。我只用过前一个，体验很不错，可以根据 description，title 等建立不同的 filter。 可以看到很多人都在用，作者也一直为爱发电。
 
 ## RSS 翻译
 
@@ -26,6 +26,6 @@ RSS 是我一直在用并且非常喜欢的信息获取方式，你可以把你�
 
 ![RSS-GPT](pics/RSS-GPT.png)
 
-其实对我来说，相比较翻译，对 RSS 全文的中文总结更有价值，因为我可以快速了解到这篇文章的主要内容，来决定是否进一步精读。所以我最近写了这样一个工具，可以全文总结 RSS 订阅源，提取关键词，生成摘要附在原文之前，方便阅读。除了 AI 摘要，另外还有合并 RSS 订阅源，过滤订阅源的一些功能，可以详见 [RSS-GPT](https://github.com/yinan-c/RSS-GPT)。如果想要自己配置自己喜欢的订阅源，可以 fork 我的项目，部署十分简单，只需要更改 config.ini，给 Repo GitHub Pages 权限，以及设置 WORK-TOKEN（Github Token to access GitHub pages）, U-NAME (Git commit user name), U-EMAIL (Git commmit user email), OPENAI_API_KEY 这四个 repo_secrets 即可。我之后可能会写一篇更详细的中英文指南。
+其实对我来说，相比较翻译，对 RSS 全文的中文总结更有价值，这样我可以快速了解到这篇文章的主要内容，来决定是否进一步精读。所以我最近写了这样一个工具，可以全文总结 RSS 订阅源，提取关键词，生成摘要附在原文之前，方便阅读。除了 AI 摘要，另外还有合并 RSS 订阅源，过滤订阅源的一些功能，可以详见 [RSS-GPT](https://github.com/yinan-c/RSS-GPT)。如果想要自己配置自己喜欢的订阅源，可以 fork 我的项目，部署十分简单，只需要更改 config.ini，给 Repo GitHub Pages 权限，以及设置 WORK-TOKEN（Github Token to access GitHub pages）, U-NAME (Git commit user name), U-EMAIL (Git commmit user email), OPENAI_API_KEY 这四个 repo_secrets 即可。我之后可能会写一篇更详细的中英文指南。
 
 这里也汇集几条我公开的 [RSS 源](https://yinan.me/RSS-GPT/rss/)，欢迎大家订阅。
