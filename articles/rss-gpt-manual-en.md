@@ -96,7 +96,7 @@ Go to the project, click "Code" in top menu bar, open the "config.ini" file, cli
 base = "rss/"
 ```
 
-Then modify the target language, number of keywords, and summary length in the next 3 lines. The following code is feed-specific configs, format is:
+Then modify the **target language, number of keywords, and summary length** in the next 3 lines. The following code is feed-specific configs, format is:
 
 - `[source001]`: Feed ID, starts from 001 and increments, make sure IDs are unique to avoid errors.
 
