@@ -3,7 +3,7 @@
 ## 项目地址以及功能介绍
 
 - [yinan-c/RSS-GPT](https://github.com/yinan-c/RSS-GPT)
-- [RSS-GPT介绍](https://yian-c.github.io/rss-gpt.html)
+- [RSS-GPT介绍](https://yinan-c.github.io/rss-gpt.html)
 - [English manual](https://yinan-c.github.io/rss-gpt-manual-en.html)
 
 ## 需要准备的东西
@@ -141,3 +141,5 @@ base = "rss/"
    - cron: '0 */1 * * *' # run every 1 hours
 ```
 - 我设定的 prompt 是让 AI 帮助提取 关键词 + 总结 并且让 AI 自动排版, 有些时候 AI 排版的效果并不是很好, 你也可以自己需要修改 `main.py` 文件第 113 - 129 行的 prompt。
+
+- 如果有任何问题, 欢迎 [email](mailto://yinan.email@gmail.com) 交流。

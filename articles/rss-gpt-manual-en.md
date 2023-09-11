@@ -146,3 +146,5 @@ Click "View Rss-Translation" to go to the feed list page, left of `->` is origin
 ```
 
 - My prompt is basically asking AI to extract keywords + summarize + auto-formatting. Formatting is not always perfect, and my prompt is not perfectly optmized for everyone. You can modify prompt at lines 113-129 based on your needs.
+
+- If there is any question, feel free to open an issue or contact me via [email](mailto://yinan.email@gmail.com)

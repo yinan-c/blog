@@ -2,9 +2,9 @@
 
 ## 项目地址与配置步骤
 
-[yinan-c/RSS-GPT](https://github.com/yinan-c/RSS-GPT)
+- [yinan-c/RSS-GPT](https://github.com/yinan-c/RSS-GPT)
 
-[RSS-GPT 使用指南](https://yinan-c.github.io/rss-gpt-manual-zh.html)
+- [RSS-GPT 使用指南](https://yinan-c.github.io/rss-gpt-manual-zh.html)
 
 
 ## 信息爆炸的焦虑
