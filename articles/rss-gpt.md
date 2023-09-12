@@ -1,10 +1,9 @@
 # AI 总结 RSS Feeds
 
-## 项目地址与使用指南
+## 项目地址与配置教程
 
 - [yinan-c/RSS-GPT](https://github.com/yinan-c/RSS-GPT)
-
-- [RSS-GPT 使用指南](https://yinan-c.github.io/rss-gpt-manual-zh.html)
+- [RSS-GPT 配置教程](https://yinan-c.github.io/rss-gpt-manual-zh.html)
 
 
 ## 信息爆炸的焦虑
@@ -29,6 +28,8 @@ RSS 是我一直在用并且非常喜欢的信息获取方式，你可以把你�
 
 ![RSS-GPT](pics/RSS-GPT.png)
 
-其实对我来说，相比较翻译，对 RSS 全文的中文总结更有价值，这样我可以快速了解到这篇文章的主要内容，来决定是否进一步精读。所以我最近写了这样一个工具，可以全文总结 RSS 订阅源，提取关键词，生成摘要附在原文之前，方便阅读。除了 AI 摘要，另外还有合并 RSS 订阅源，过滤订阅源的一些功能，可以详见 [RSS-GPT](https://github.com/yinan-c/RSS-GPT)。如果想要自己配置自己喜欢的订阅源，可以 fork 我的项目，部署十分简单，只需要更改 config.ini，给 Repo GitHub Pages 权限，以及设置 WORK-TOKEN（Github Token to access GitHub repo and enable workflow）, U-NAME (Git commit user name), U-EMAIL (Git commmit user email), OPENAI_API_KEY 这四个 repo_secrets 即可。我之后可能会写一篇更详细的中英文指南。
+其实对我来说，相比较翻译，对 RSS 全文的中文总结更有价值，这样我可以快速了解到这篇文章的主要内容，来决定是否进一步精读。所以我最近写了这样一个工具，可以全文总结 RSS 订阅源，提取关键词，生成摘要附在原文之前，方便阅读。除了 AI 摘要，另外还有合并 RSS 订阅源，过滤订阅源的一些功能，可以详见 [RSS-GPT](https://github.com/yinan-c/RSS-GPT)。如果想要自己配置自己喜欢的订阅源，可以 fork 我的项目，部署十分简单，只需要更改 config.ini，给 Repo GitHub Pages 权限，以及设置 WORK_TOKEN（Github Token to access GitHub repo and enable workflow）, U_NAME (Git commit user name), U_EMAIL (Git commmit user email), OPENAI_API_KEY 这四个 repo_secrets 即可。
+
+我写了一篇详细的[指南](https://yinan-c.github.io/rss-gpt-manual-zh.html)，希望能帮助到大家。
 
 这里也汇集几条我公开的 [RSS 源](https://yinan.me/RSS-GPT/rss/)，欢迎大家订阅。

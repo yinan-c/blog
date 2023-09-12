@@ -65,9 +65,9 @@
 
 ![](pics/secrets.png)
 
-- 给翻译仓库添加 U_NAME, U_EMAIL, WORK_TOKEN 三个 secret, 注意一次只能添加一个, 添加完一个后再添加下一个。
+- 给仓库分别添加 `U_NAME`, `U_EMAIL`, `WORK_TOKEN`, `OPENAI_API_KEY` 4个 repo secrets, 一次只能添加一个
 
-  - Name: U_NAME, U_EMAIL, WORK_TOKEN
+  - Name: U_NAME, U_EMAIL, WORK_TOKEN, OPENAI_API_KEY
   
   - Value: 分别为 U_NAME 上面所说的你的用户名, U_EMAIL 是上面所说的你的邮箱, WORK_TOKEN 是你刚刚复制的 token
   

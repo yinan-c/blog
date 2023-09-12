@@ -65,11 +65,11 @@ Go to your forked repo, click "Settings" in top menu bar, then click "Secrets an
 
 ![](pics/secrets.png)
 
-- Add U_NAME, U_EMAIL, WORK_TOKEN as secrets to the repo, can only add one at a time:
+- Add `U_NAME`, `U_EMAIL`, `WORK_TOKEN`, `OPENAI_API_KEY` as secrets to the repo, can only add one at a time:
 
-  - Name: U_NAME, U_EMAIL, WORK_TOKEN
+  - Name: U_NAME, U_EMAIL, WORK_TOKEN, OPENAI_API_KEY
   
-  - Value: Your username, email, and the copied token
+  - Value: Your username, email, the copied GitHub token and OpenAI API Key
   
   - Click "Add secret"
 
