@@ -1,6 +1,6 @@
 # RSS-GPT 使用指南
 
-## 项目地址以及功能介绍
+## 项目地址与功能介绍
 
 - [yinan-c/RSS-GPT](https://github.com/yinan-c/RSS-GPT)
 - [RSS-GPT介绍](https://yinan-c.github.io/rss-gpt.html)
@@ -120,7 +120,7 @@ base = "rss/"
 
 - 点击笔形图标, 编辑代码, 进入第 289 行,  修改 "https://yinan-c.github.io/" 至你的 GitHub Pages 地址, 也就是把 yinan-c 改成你自己的用户名。
    
-- （可选）根据你的需求, 可以在 113 - 129 行修改 promt, 让 GPT 生成更符合你需求的总结。
+- （可选）根据你的需求, 可以在 113 - 129 行修改 prompt, 让 GPT 生成更符合你需求的总结。
 
 - 点击最下边的 “Commit changes” 提交修改。
 

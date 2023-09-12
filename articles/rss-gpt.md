@@ -1,6 +1,6 @@
 # AI 总结 RSS Feeds
 
-## 项目地址与配置步骤
+## 项目地址与使用指南
 
 - [yinan-c/RSS-GPT](https://github.com/yinan-c/RSS-GPT)
 
