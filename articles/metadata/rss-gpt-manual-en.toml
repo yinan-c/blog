@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2023-09-11 18:14:50+01:00'
 
 # 文章修改时间
-mtime = '2023-09-11 21:35:56+01:00'
+mtime = '2023-09-12 03:34:07+01:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = 'e4aa6c11e68b5db0ec1450c5a40ab726e1dfdd7c'
+checksum = 'd0b542c6c290e6b531401d620fe2aaf09ecc860c'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -37,15 +37,9 @@ pairs = [
 # 文章摘要
 abstract = '''Introduction
 
-
 yinan-c/RSS-GPT 
-
-
 RSS-GPT Introduction
-
-
 中文指南
-
 
 Prerequisites
 
@@ -53,4 +47,4 @@ GitHub account
 OpenAI API Key (get it at OpenAI website)
 
 1. GitHub Actions deployment
-The main idea is to use GitHub Actions to run Python scripts periodically, the scr...'''
+The main idea is to use GitHub Actions to run Python scripts periodically, the script ca...'''

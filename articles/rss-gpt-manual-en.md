@@ -3,9 +3,7 @@
 ## Introduction
 
 - [yinan-c/RSS-GPT](https://github.com/yinan-c/RSS-GPT) 
-
 - [RSS-GPT Introduction](https://yinan-c.github.io/rss-gpt.html)
-
 - [中文指南](https://yinan-c.github.io/rss-gpt-manual-zh.html)
 
 ## Prerequisites
@@ -145,6 +143,16 @@ Click "View Rss-Translation" to go to the feed list page, left of `->` is origin
    - cron: '0 */1 * * *' # run every 1 hours
 ```
 
+For more info on cron syntax, see [crontab docs](https://crontab.guru/) or [GitHub docs](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule).
+
 - My prompt is basically asking AI to extract keywords + summarize + auto-formatting. Formatting is not always perfect, and my prompt is not perfectly optmized for everyone. You can modify prompt at lines 113-129 based on your needs.
 
-- If there is any question, feel free to open an issue or contact me via [email](mailto://yinan.email@gmail.com)
+- Regarding the usage of the OpenAI API, in order to minimize costs as much as possible, the following default measures have been adopted for this project:
+
+  - Different models are selected based on text length, and if the text length exceeds 16k, the first 16k characters will be used with GPT-3.5 Turbo 16K. 
+
+  - Considering GPT-4 costs about 10 times more than GPT-3.5 Turbo, GPT-3.5 Turbo is used by default. If you want to use a different model, you can modify the model parameter passed to the `gpt_summary` function of lines 227-243 of main.py, e.g. `model="your_model"`. Please refer to the [OpenAI API Pricing](https://openai.com/pricing/) for different prices of different OpenAI models.
+  
+  - The script will read the xml files already existing in the rss/ folder. Existing articles will not be summarized again, so OpenAI API will not be repeatedly consumed. 
+
+- If OpenAI releases more models in the future, I will choose the most suitable default model and update the code accordingly. If you have a better way to use AI or encounter any issues, feel free to [email me](mailto://yinan.email@gmail.com). 

@@ -13,7 +13,9 @@
 
 ## 1 GitHub Actions 部署
 
-大致原理是使用 GitHub Actions 定时运行 Python 脚本, 脚本调用 OpenAI API 生成总结附在 RSS 原文之前, 然后生成一个新的 xml 文件, 然后把文件 commit 到仓库中 rss/ 文件夹内, 文件夹内所有内容都通过 Github Actions 部署在 GitHub Pages 上, 这样就可以通过你的 GitHub pages 地址访问到这个 xml 文件, 可以在任何支持 RSS 的阅读器中订阅你自己生成的 feeds。
+大致原理是使用 GitHub Actions 定时运行 Python 脚本, 脚本调用 OpenAI API 生成总结附在 RSS 原文之前, 生成一个新的 xml 文件, 并自动 commit 到仓库中 rss/ 文件夹内。
+
+文件夹内所有内容都将通过 Github Actions 自动部署在 GitHub Pages 上, 这样就可以通过你的 Pages 地址访问到这个 xml 文件, 然后就可以在任何 RSS 阅读器中订阅。
 
 如果你不想部署在 GitHub Pages, 应该也可以通过直接访问仓库中的 xml 原文件（地址以 raw.githubusercontent.com 开头）来订阅, 比如说我这个仓库的 xml 文件地址是 [https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/rss/brett-terpstra.xml](https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/rss/brett-terpstra.xml)。
 
@@ -132,14 +134,21 @@ base = "rss/"
 
 点击那个 “查看Rss-Translation” 链接,就可以跳转到订阅列表页,每条项目的 `->` 左侧的是原始订阅链接, 右侧是转换后的链接, 这个链接和其他的RSS订阅链接一样处理就好了。
 
-**注意**
+**一些说明**
 
-- 默认设置是每2小时运行一次脚本, 如果需要改的更短请修改 `.github/workflows/cron_job.yml` 文件第7行,比如
+- 默认设置是每2小时运行一次脚本, 如果需要改的更短请修改 `.github/workflows/cron_job.yml` 文件第7行, 比如：
 
 ```
    - cron: '0 */2 * * *' # run every 2 hours
    - cron: '0 */1 * * *' # run every 1 hours
 ```
-- 我设定的 prompt 是让 AI 帮助提取 关键词 + 总结 并且让 AI 自动排版, 有些时候 AI 排版的效果并不是很好, 你也可以自己需要修改 `main.py` 文件第 113 - 129 行的 prompt。
+更加具体可以查看 [crontab](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) 的用法 或者[crontab.guru](https://crontab.guru/) 的文档。
 
-- 如果有任何问题, 欢迎 [email](mailto://yinan.email@gmail.com) 交流。
+- 我设定的 prompt 是让 AI 帮助提取 关键词 + 总结 并且让 AI 自动排版, 有些时候 AI 排版的效果并不是很好, 你也可以根据自己需要修改 `main.py` 第 113 - 129 行的 prompt。
+
+- 关于 OpenAI API 的用量，为了尽可能保证费用最低，本项目采取了以下默认措施：
+  - 根据文本长度选取不同的模型，而如果文本长度超过了 16k，则会截取前 16k 字符使用 GPT-3.5 Turbo 16K.
+  - 考虑到 GPT-4 费用大约是 GPT-3.5 Turbo 的十倍左右，默认用的是 GPT-3.5 Turbo，如果你想用不同的模型，可以在 `main.py` 文件修改第 227 - 243 行中传入 `gpt_summary` 函数的参数 `model="your_model"` 。关于 OpenAI 不同模型的不同价格，请参考 [OpenAI API Pricing](https://openai.com/pricing/)。
+  - 脚本会读取 rss/ 文件夹中已存在的 xml 文件，已经存在的文章不会再次总结，所以不会重复消耗用量。
+
+- 如果 OpenAI 之后发布了更多的模型，我会酌情选择最合适的默认模型，修改代码。如果你有更合理的使用 AI 的方案或者使用过程中有问题，欢迎 [email](mailto://yinan.email@gmail.com) 交流。
