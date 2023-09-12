@@ -128,21 +128,21 @@ base = "rss/"
 
 进入项目, 点击上方菜单栏的 "Actions", 点击 “cron_job", 选择 “Run workflow"
 
-等待运行成功会显示绿色的勾, 运行失败会显示红色的叉。如果出现红叉, 一般都是你修改ini文件时, 什么地方写错了, 或者权限、token 设置错误。请仔细检查。
+等待运行成功会显示绿色的勾, 运行失败会显示红色的叉。如果出现红叉, 一般都是你修改 ini 文件时, 什么地方写错了, 或者权限、Secrets 设置错误。请仔细检查。
 
-如果前边没出现错误 (主要是actions上没出现红叉), 那么你可以在项目的介绍页看到你的订阅源
+如果前边没出现错误 (主要是运动 Actions 没出现红叉), 那么你可以在项目的介绍页看到你的订阅源。
 
-点击那个 “查看Rss-Translation” 链接,就可以跳转到订阅列表页,每条项目的 `->` 左侧的是原始订阅链接, 右侧是转换后的链接, 这个链接和其他的RSS订阅链接一样处理就好了。
+每条项目的 `->` 左侧的是原始订阅链接, 右侧是转换后的链接。请确保你已经在第3步中设置了你自己的 GitHub Pages 地址。在任何 RSS 阅读器中订阅右侧的链接即可。
 
 **一些说明**
 
-- 默认设置是每2小时运行一次脚本, 如果需要改的更短请修改 `.github/workflows/cron_job.yml` 文件第7行, 比如：
+- 默认设置是每2小时运行一次脚本, 如果需要改的更频繁请修改 `.github/workflows/cron_job.yml` 文件第7行, 比如：
 
 ```
    - cron: '0 */2 * * *' # run every 2 hours
    - cron: '0 */1 * * *' # run every 1 hours
 ```
-更加具体可以查看 [crontab](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) 的用法 或者[crontab.guru](https://crontab.guru/) 的文档。
+更加具体的参数可以查看 [crontab](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) 的用法 或者[crontab.guru](https://crontab.guru/) 的文档。
 
 - 我设定的 prompt 是让 AI 帮助提取 关键词 + 总结 并且让 AI 自动排版, 有些时候 AI 排版的效果并不是很好, 你也可以根据自己需要修改 `main.py` 第 113 - 129 行的 prompt。
 

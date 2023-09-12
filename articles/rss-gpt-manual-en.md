@@ -130,9 +130,9 @@ Go to the project, click "Actions" in top menu bar, click "cron_job" and choose 
 
 Green check mark means successful run, red x means failure, usually due to errors in edited ini file or incorrect permissions/tokens. Double check if errors occur.
 
-If no errors, you can see your feeds on the project README page. 
+If there are no errors, you should see your feeds on the project README page. 
 
-Click "View Rss-Translation" to go to the feed list page, left of `->` is original URL, right is converted URL to subscribe like normal RSS feeds.
+On the left of `->` is original URL, right is converted URL to subscribe like any other RSS feeds. Make sure you have changed your username in step 3.
 
 **Notes**
 
