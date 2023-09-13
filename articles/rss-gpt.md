@@ -10,7 +10,7 @@
 
 RSS 是我一直在用并且非常喜欢的信息获取方式，你可以把你喜欢的内容创造者或者大多网页上更新的内容聚合在一个地方集中阅读。但不加筛选，富含噪音的 RSS 在订阅中堆积也很让人疲惫不堪。每天几百几千条未读产生，如果强迫症和焦虑症患者强求 RSS inbox-zero 的话，久而久之会浪费很多的时间执着于清空未读上面，实属折磨。
 
-![Heavy Inbox](pics/Inbox.png)
+![Heavy Inbox](../output/pics/Inbox.png)
 
 并且即使你全部清空了阅读，多半情况下 inbox 空空，脑袋也空空，因为这时候你已经没有精力去消化，而是像短视频一样消费 RSS 内容，你只是得到了匆匆而过的信息，没有内化沉淀成知识，而代价却是时间，注意力和精力。
 
@@ -26,7 +26,7 @@ RSS 是我一直在用并且非常喜欢的信息获取方式，你可以把你�
 
 ## RSS 摘要
 
-![RSS-GPT](pics/RSS-GPT.png)
+![RSS-GPT](../output/pics/RSS-GPT.png)
 
 其实对我来说，相比较翻译，对 RSS 全文的中文总结更有价值，这样我可以快速了解到这篇文章的主要内容，来决定是否进一步精读。所以我最近写了这样一个工具，可以全文总结 RSS 订阅源，提取关键词，生成摘要附在原文之前，方便阅读。除了 AI 摘要，另外还有合并 RSS 订阅源，过滤订阅源的一些功能，可以详见 [RSS-GPT](https://github.com/yinan-c/RSS-GPT)。如果想要自己配置自己喜欢的订阅源，可以 fork 我的项目，部署十分简单，只需要更改 config.ini，给 Repo GitHub Pages 权限，以及设置 WORK_TOKEN（Github Token to access GitHub repo and enable workflow）, U_NAME (Git commit user name), U_EMAIL (Git commmit user email), OPENAI_API_KEY 这四个 repo_secrets 即可。
 

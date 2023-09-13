@@ -45,7 +45,7 @@ Since the project involves using scripts to operate repo contents, permissions a
 
 - Configure the new token:
 
-![](pics/token-set.png)
+![](../output/pics/token-set.png)
 
    - Note: RSS-GPT
    
@@ -55,7 +55,7 @@ Since the project involves using scripts to operate repo contents, permissions a
    
 - Click "Generate token" at bottom.
 
-![](pics/token-copy.png)
+![](../output/pics/token-copy.png)
 
 **Copy the token after clicking, make sure to copy it on this page, you won't be able to see the token after leaving this page. If you miss it, you'll have to generate a new one following the steps above.**
 
@@ -63,7 +63,7 @@ Since the project involves using scripts to operate repo contents, permissions a
 
 Go to your forked repo, click "Settings" in top menu bar, then click "Secrets and variables" in left sidebar, choose "Actions", then click "New repository secret" at top right. 
 
-![](pics/secrets.png)
+![](../output/pics/secrets.png)
 
 - Add `U_NAME`, `U_EMAIL`, `WORK_TOKEN`, `OPENAI_API_KEY` as secrets to the repo, can only add one at a time:
 
@@ -77,7 +77,7 @@ Go to your forked repo, click "Settings" in top menu bar, then click "Secrets an
 
 Enable GitHub Actions access to Pages:
 
-![](pics/pages.png)
+![](../output/pics/pages.png)
 
   - Click "Settings"
   

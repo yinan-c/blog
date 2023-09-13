@@ -45,7 +45,7 @@
 
 - 配置新建的token
 
-![](pics/token-set.png)
+![](../output/pics/token-set.png)
 
    - Note: RSS-GPT
    
@@ -55,7 +55,7 @@
    
    - 点击页面最下方的 "Generate token"
 
-![](pics/token-copy.png)
+![](../output/pics/token-copy.png)
 
 **点击完后复制token, 注意一定要在此页面复制好, 离开这个页面你就再也看不到token了。错过就只能按照上面的步骤重新生成一个了**
 
@@ -63,7 +63,7 @@
 
 进入你 fork 的 repository, 点击上方菜单栏的 "Settings", 然后点开左侧菜单栏的 "Secrets and variables", 选择 "Actions", 然后点击右上角的 "New repository secret"。
 
-![](pics/secrets.png)
+![](../output/pics/secrets.png)
 
 - 给仓库分别添加 `U_NAME`, `U_EMAIL`, `WORK_TOKEN`, `OPENAI_API_KEY` 4个 repo secrets, 一次只能添加一个
 
@@ -78,7 +78,7 @@
 
 开启 GitHub Actions 访问 Pages 的权限
 
-![](pics/pages.png)
+![](../output/pics/pages.png)
 
   - 点击 “Settings” 
   
