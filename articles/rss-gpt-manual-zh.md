@@ -136,17 +136,22 @@ base = "rss/"
 
 **一些说明**
 
-- 默认设置是每2小时运行一次脚本, 如果需要改的更频繁请修改 `.github/workflows/cron_job.yml` 文件第7行, 比如：
+- 默认设置是每1小时运行一次脚本, 如果有不同需要，请修改 `.github/workflows/cron_job.yml` 文件第7行, 比如：
 
 ```
-   - cron: '0 */2 * * *' # run every 2 hours
-   - cron: '0 */1 * * *' # run every 1 hours
+   - cron: '0 */2 * * *' # 每2小时运行一次
+   - cron: '0 */1 * * *' # 每1小时运行一次
+   - cron: '0 */30 * * * *' # 每30分钟运行一次
 ```
+
 更加具体的参数可以查看 [crontab](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) 的用法 或者[crontab.guru](https://crontab.guru/) 的文档。
 
 - 我设定的 prompt 是让 AI 帮助提取 关键词 + 总结 并且让 AI 自动排版, 有些时候 AI 排版的效果并不是很好, 你也可以根据自己需要修改 `main.py` 第 113 - 129 行的 prompt。
 
-- 关于 OpenAI API 的用量，为了尽可能保证费用最低，本项目采取了以下默认措施：
+- AI 总结的内容基于 feed 中每条文章的描述，如果 RSS 本身提供全文，则会全文总结；如果是 RSS 仅仅提供文章摘要，则总结基于摘要，目前脚本没有提供抓取原文全文的功能。
+
+- 关于 OpenAI API 的用量，为了尽可能保证费用尽可能低，本项目采取了以下默认措施：
+  - 所有非文本内容（图片，框架，HTML 标签等）在让 GPT 总结之前都会被移除，以节约 token 用量。
   - 根据文本长度选取不同的模型，而如果文本长度超过了 16k，则会截取前 16k 字符使用 GPT-3.5 Turbo 16K.
   - 考虑到 GPT-4 费用大约是 GPT-3.5 Turbo 的十倍左右，默认用的是 GPT-3.5 Turbo，如果你想用不同的模型，可以在 `main.py` 文件修改第 227 - 243 行中传入 `gpt_summary` 函数的参数 `model="your_model"` 。关于 OpenAI 不同模型的不同价格，请参考 [OpenAI API Pricing](https://openai.com/pricing/)。
   - 脚本会读取 rss/ 文件夹中已存在的 xml 文件，已经存在的文章不会再次总结，所以不会重复消耗用量。
