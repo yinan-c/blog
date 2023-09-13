@@ -35,6 +35,5 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''This instruction is for setting up a Globus endpoint for your servers. I have tested two clusters/supercomputers that I use. In principle, you should test it on your clusters.
-
-With Globus, you can easily, reliably and securely move, share, & discover data...'''
+abstract = '''
+With Globus, you can easily, reliably and securely move, share, & discover data no matter where it lives – from a supercomputer, lab cluster, tape archive, public cloud or laptop.'''

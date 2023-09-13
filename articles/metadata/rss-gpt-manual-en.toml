@@ -35,16 +35,4 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''Introduction
-
-yinan-c/RSS-GPT 
-RSS-GPT Introduction
-中文指南
-
-Prerequisites
-
-GitHub account
-OpenAI API Key (get it at OpenAI website)
-
-1. GitHub Actions deployment
-The main idea is to use GitHub Actions to run Python scripts periodically, the script ca...'''
+abstract = ''' A detailed configuration guide for RSS-GPT, a script that uses ChatGPT to summarize your personalized RSS feeds. '''
