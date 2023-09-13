@@ -92,12 +92,12 @@
 {% if art.prev %}
     <a href="{{ art.prev.id }}.html" class="nav-button" id="prev-button">&lt; {{ art.prev.title }}</a>
 {% else %}
-  <a href="index.html" class="nav-button" id="prev-button"> Reached the top! Take me Home!</a>
+  <a href="index.html" class="nav-button" id="prev-button"> I'm the first! Home! </a>
 {% endif %}
 {% if art.next %}
     <a href="{{ art.next.id }}.html" class="nav-button" id="next-button">{{ art.next.title }} &gt;</a>
 {% else %}
- <a href="index.html" class="nav-button" id="next-button"> Reached the bottom! Take me Home!</a>
+ <a href="index.html" class="nav-button" id="next-button"> I'm the last! Home! </a>
 {% endif %}
 {% endif %}
 
