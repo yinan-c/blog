@@ -159,4 +159,4 @@ For more info on cron syntax, see [crontab docs](https://crontab.guru/) or [GitH
   
   - The script will read the xml files already existing in the rss/ folder. Existing articles will not be summarized again, so OpenAI API will not be repeatedly consumed. 
 
-- If OpenAI releases more models in the future, I will choose the most suitable default model and update the code accordingly. If you have a better way to use AI or encounter any issues, feel free to [email me](mailto://yinan.email@gmail.com). 
+- If OpenAI releases more models in the future, I will choose the most suitable default model and update the code accordingly. If you have a better way to use AI or encounter any issues, feel free to [email me](mailto:yinan.email@gmail.com). 
