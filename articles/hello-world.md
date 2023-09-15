@@ -18,3 +18,13 @@
 ## 博客用了什么
 本博客的文章用 Markdown 编写。
 采用了开源方案 [PyBoke](https://github.com/ahui2016/pyboke) 生成静态网站，自己在此基础上加了点[其他功能](https://github.com/yinan-c/pyboke/)，例如首页显示摘要，文章底部翻页，full text RSS 格式。使用的是 [newcss 主题](https://newcss.net/)，再通过 [GitHub Pages](https://pages.github.com/) 发布。
+
+本博客所有源 markdown 文件，以及模板开源，托管在 [GitHub](https://github.com/yinan-c/blog) 上。
+
+## 版权
+本博客所有文章采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 协议。你可以自由地：
+**共享** — 在任何媒介以任何形式复制、发行本作品
+**演绎** — 修改、转换或以本作品为基础进行创作
+在任何用途下，甚至商业目的。
+
+只要你遵守许可协议条款，许可人就无法收回你的这些权利

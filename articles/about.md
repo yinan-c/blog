@@ -10,16 +10,19 @@ Now, I finally decided to start one, thanks to a great tool [PyBoke](https://git
 
 ## About this blog
 
-This blog is created by a modified version of [PyBoke](https://github.com/yinan-c/pyboke). The original version is created by [ahui2016](https://github.com/ahui2016). 
+This blog is created by a modified version of [PyBoke](https://github.com/yinan-c/pyboke), where I added features like full text RSS, navigation buttons, and abstracts on the homepage.
+The original version of PyBoke is created by [ahui2016](https://github.com/ahui2016).
 
-I write the articles in Markdown files, the templates and Markdown files I use on this website can also be found in the [GitHub repo](https://github.com/yinan-c/blog).
+This blog is fully open source. All the articles in Markdown format, together with the templates I use on this website can also be found in the [GitHub repo](https://github.com/yinan-c/blog).
 
 I use the theme [newcss](https://newcss.net/), and publish the blog on [GitHub Pages](https://pages.github.com/).
 
 The articles I write are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You are free to: 
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
 for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
 
 ## What will I write here?
 
