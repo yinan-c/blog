@@ -17,15 +17,6 @@ This blog is fully open source. All the articles in Markdown format, together wi
 
 I use the theme [newcss](https://newcss.net/), and publish the blog on [GitHub Pages](https://pages.github.com/).
 
-# License
-
-The articles I write are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You are free to: 
-- **Share** — copy and redistribute the material in any medium or format
-- **Adapt** — remix, transform, and build upon the material
-for any purpose, even commercially.
-
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-
 ## What will I write here?
 
 I am interested in many things, including but not limited to: RSS, macOS softwares, Python ... As I browse the internet (mostly via RSS), interesting things will pop up and I am happy to share online here.
@@ -34,3 +25,12 @@ I am interested in many things, including but not limited to: RSS, macOS softwar
 
 - Twitter logo icons created by [Md Tanvirul Haque - Flaticon](https://www.flaticon.com/free-icon/twitter_3670151)
 - Email icon from [freepnglogos.com](https://www.freepnglogos.com/images/email-13765.html)
+
+# License
+
+The articles I write are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You are free to: 
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
