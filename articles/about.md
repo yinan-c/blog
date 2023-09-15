@@ -17,6 +17,8 @@ This blog is fully open source. All the articles in Markdown format, together wi
 
 I use the theme [newcss](https://newcss.net/), and publish the blog on [GitHub Pages](https://pages.github.com/).
 
+# License
+
 The articles I write are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You are free to: 
 - **Share** — copy and redistribute the material in any medium or format
 - **Adapt** — remix, transform, and build upon the material
