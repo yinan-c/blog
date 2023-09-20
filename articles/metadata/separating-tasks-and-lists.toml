@@ -1,0 +1,39 @@
+# 本文件采用 TOML 格式 https://toml.io/
+
+# 文章标题 [请勿手动修改，会自动获取]
+title = '''Separating tasks and non-actionable items'''
+
+# 文章作者 [通常留空，自动等同于博客作者]
+author = ''''''
+
+# 文章创建时间
+ctime = '2023-09-19 17:32:31+01:00'
+
+# 文章修改时间
+mtime = '2023-09-20 02:39:54+01:00'
+
+# sha1, 用来判断文章内容有无变更 [请勿手动修改]
+checksum = '9c635730f7fc525295826efb0f216993f9b143c2'
+
+# 是否忽略文章 (true/false)
+# 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
+ignored = false
+
+# HTML中的图片的最大宽度 (留空表示跟随总设定)
+img_width = ''
+
+# 是否执行自动替换 (0:跟随总设定, -1:不执行, 1:执行)
+replace = 0
+
+# 自动替换。例:
+# pairs =  [
+#   [ '''../output/pics/abc.jpg''', '''https://example.com/abc.jpg''' ],
+#   [ '''../output/pics/def.jpg''', '''https://example.com/def.jpg''' ],
+# ]
+pairs = [
+
+]
+
+# 文章摘要
+abstract = '''The thought
+I read an discusion about devonthink on MPU forum, Yet another DevonThink topic - Software - MPU Talk and came across a interesting and much enlighting comment by @ryanjamuraphy, when he was talking about his usage of Devonthink as a Notes and...'''
