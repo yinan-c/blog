@@ -115,8 +115,8 @@ Next are optional filter configs, note all 3 must be set together or not set:
 Click "Commit changes" at bottom to submit edits. 
 
 ## 3.1 Modify `main.py` 
-
-**(if you used default repo name in 1.1, you can skip this step)**
+**
+(if you used default repo name in 1.1, you can skip this step)**
 
 - Open "main.py" file, click the pencil icon to edit code, go to line 290 and modify the "RSS-GPT" in "https://{U_NAME}.github.io/RSS-GPT" to your repo name.
 
