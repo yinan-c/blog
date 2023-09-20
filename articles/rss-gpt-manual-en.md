@@ -19,31 +19,35 @@ All contents in the repo folder are deployed on GitHub Pages via GitHub Actions,
 
 If you don't want to deploy on GitHub Pages, you can also subscribe to the raw xml file in the repo (URL starts with raw.githubusercontent.com), e.g. the xml file URL of this repo is [https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/rss/brett-terpstra.xml](https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/rss/brett-terpstra.xml).
 
-### 1.1 Fork the project, uncheck 'copy only the main branch'
+### 1.1 Fork the project
 
-Go to the project [RSS-GPT](https://github.com/yinan-c/RSS-GPT) and fork the repo, uncheck 'copy only the main branch' to copy all branches. This is for separating the workflow auto commit branch from the main branch. Note, in that case, the 'auto-commit' branch will be the working branch that actually generate new xml files and push to your repo and GitHub Pages, **only edits in the 'auto-commit' branch will take effect**.
-
-I did this because I want to keep the main branch clean, so that others can see when the script was actully updated and decided whether to pull the changes.
-
-If you don't mind the main branch having auto-commit edits, you can also just fork the main branch and configure your workflows to commit to the main branch, which I will cover later.
+Go to the project [RSS-GPT](https://github.com/yinan-c/RSS-GPT) and fork it to your own repo.
 
 ### 1.2 Three Repo Secrets
 
 #### U_NAME 
 
-The username used for `git commit`, **please set to your GitHub username**. Your username is the last part of your GitHub homepage URL, e.g. https://github.com/yinan-c, the username is yinan-c.
+The username used for `git commit`, usually your GitHub username. Your username is the last part of your GitHub homepage URL, e.g. https://github.com/yinan-c, the username is yinan-c.
 
 #### U_EMAIL
 
-The email used for `git commit`, it's the email you used to register GitHub, can be found in [GitHub settings page](https://github.com/settings/emails).
+The email used for `git commit`, it's the email you used to register GitHub, can be found in [GitHub Settings page](https://github.com/settings/emails).
 
 #### WORK_TOKEN 
 
-Since the project involves using scripts to operate repo contents, permissions are needed for the script to modify files in the repo. Apply for a new personal access token (classic) in [GitHub settings page](https://github.com/settings/tokens/new) and configure the new token as follows:
+Since the project involves using scripts to operate repo contents, permissions are needed for the script to modify files in the repo. Apply for a Repository Secret token:
+
+- Click your avatar at top right of GitHub homepage, choose "Settings" to go to settings page.
+
+- Click "Developer settings" at bottom of left sidebar.
+
+- Click "Personal access tokens" under "Developer settings", choose "Tokens (classic)", click "Generate new token (classic)" at top left. 
+
+- Configure the new token:
 
 ![](../output/pics/token-set.png)
 
-   - Note: "RSS-GPT" or any name you like
+   - Note: RSS-GPT
    
    - Select scopes: Check all options under "repo" and "workflow" 
    
@@ -83,11 +87,7 @@ Enable GitHub Actions access to Pages:
 
 ## 2. Configure RSS sources to merge, filter and summarize
 
-Go to the project, if you forked both main and auto-commit branches, **switch to the auto-commit branch as below**, other wise skip this step.
-
-![](../output/pics/change_branch.png)
-
-Open the "config.ini" file, click the pencil icon at top right to edit code and configure your desired sources. Don't change the first two lines.
+Go to the project, click "Code" in top menu bar, open the "config.ini" file, click the pencil icon at top right to edit code and configure your desired sources. Don't change the first two lines.
 
 ```
 [cfg] 
@@ -102,7 +102,7 @@ Then modify the **target language, number of keywords, and summary length** in t
 
 - `url = "https://brett.trpstra.net/brettterpstra"`: Original RSS feed URL, can contain multiple feeds separated by comma. 
 
-- `max_items = "10"`: Number of articles to summarize between refreshes. E.g. 10 means summarizing the latest 10 articles on each refresh. 0 means no summarization, returning original entries.
+- `max = "10"`: Number of articles to summarize between refreshes. E.g. 10 means summarizing the latest 10 articles on each refresh. 0 means no summarization, returning original entries.
 
 Next are optional filter configs, note all 3 must be set together or not set: 
 
@@ -114,59 +114,40 @@ Next are optional filter configs, note all 3 must be set together or not set:
 
 Click "Commit changes" at bottom to submit edits. 
 
-## 3.1 Modify `main.py` (if you used default repo name in 1.1, you can skip this step)
+## 3. Modify README output
 
-- Open "main.py" file, click the pencil icon to edit code, go to line 290 and modify the "RSS-GPT" in "https://{U_NAME}.github.io/RSS-GPT" to your repo name.
+- Click "Code", open "main.py" file. 
+
+- Click the pencil icon to edit code, go to line 289 and modify "https://yinan-c.github.io/" to your own GitHub Pages URL, change yinan-c to your username.
 
 - (Optional) Modify prompt at lines 113-129 based on your needs for better summaries. 
 
 - Click "Commit changes" at bottom to submit edits.
 
-## 3.2 Modify `cron_job.yml` (if you forked "auto-commit" branch in 1.1 and edited auto-commit branch in Step 2, you can skip this step)
+## 4. Test GitHub Actions 
 
-This step is to let GitHub Actions automatically commit to main branch instead of auto-commit branch.
+Go to the project, click "Actions" in top menu bar, click "cron_job" and choose "Run workflow".
 
-- Open ".github/workflows/cron_job.yml" file, click the pencil icon to edit code, delete line 15 `    if: ${{ github.ref == 'refs/heads/auto-commit' }}`, then click "Commit changes" at bottom to submit edits.
-- Open ".github/workflows/jekyll-gh-pages.yml" file, click the pencil icon to edit code, delete line 28 `    if: ${{ github.ref == 'refs/heads/auto-commit' }}`, modify line 8 `- auto-commit` to `- main`, then click "Commit changes" at bottom to submit edits.
-
-## 4. Test GitHub Actions
-
-Go to the project, click "Actions" in top menu bar, click "cron_job" select 'auto-commit' branch and choose "Run workflow".
-
-Green check mark means successful run, red x means failure, usually due to errors in edited ini file or incorrect permissions/tokens, or the edits are not in the auto-commit branch.
+Green check mark means successful run, red x means failure, usually due to errors in edited ini file or incorrect permissions/tokens. Double check if errors occur.
 
 If there are no errors, you should see your feeds on the project README page. 
 
 On the left of `->` is original URL, right is converted URL to subscribe like any other RSS feeds. Make sure you have changed your username in step 3.
 
-## Some extra notes
-
-### About feeds refresh frequency
+**Notes**
 
 - Default run frequency is every 2 hours, modify `.github/workflows/cron_job.yml` line 7 to change, e.g. 
 
 ```
    - cron: '0 */2 * * *' # run every 2 hours
    - cron: '0 */1 * * *' # run every 1 hours
-   - cron: '0 0 * * *' # run every day at 00:00
-   - cron: '*/30 * * * *' # run every 30 minutes
 ```
 
 For more info on cron syntax, see [crontab docs](https://crontab.guru/) or [GitHub docs](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule).
 
-### What if I don't want to use summarization feature?
-
-- Well, you can still use this script to filter and merge multiple subscription sources. You just need to not set the OpenAI API Key in 1.3, or not set the `max_items` in `config.ini`, or set it to 0. By default, this script can also return the original article entries when the AI call fails. 
-
-- If you do want the AI summarization feature and have correctly set `config.ini`, but still receive the original entries without summarization or experience infrequent updates, you can check the error information of the OpenAI API or feedparser from the `feed_name.log` file in the "auto-commit" branch's `rss/` folder of the project.
-  
-### About AI summary Content
-
 - My prompt is basically asking AI to extract keywords + summarize + auto-formatting. Formatting is not always perfect, and my prompt is not perfectly optmized for everyone. You can modify prompt at lines 113-129 based on your needs.
 
 - AI summaries are based on the description of each article in the feed. If the RSS itself provides the full text article, the full text will be summarized; if the RSS only provides the article summary, the summary will be based on the summary, and the script does not currently provide the function of crawling the full text of the original article.
-
-### About the usage of OpenAI API
 
 - Regarding the usage of the OpenAI API, in order to minimize costs as much as possible, the following default measures have been adopted for this project:
 
@@ -178,8 +159,4 @@ For more info on cron syntax, see [crontab docs](https://crontab.guru/) or [GitH
   
   - The script will read the xml files already existing in the rss/ folder. Existing articles will not be summarized again, so OpenAI API will not be repeatedly consumed. 
 
-### About repo updates
-
-- I have separated manual edits and workflow auto commits into different branches, so you can see when and what I have edited in the main branch to decide whether to pull the latest changes. Note that if you want the edits to take effect, please pull to the working branch, which is the auto-commit branch.
-
-- If OpenAI releases more models in the future, I will choose the most suitable default model and update the code accordingly. If you have a better way to use AI or encounter any issues or spotted any errors, feel free to [email me](mailto:yinan.email@gmail.com). 
+- If OpenAI releases more models in the future, I will choose the most suitable default model and update the code accordingly. If you have a better way to use AI or encounter any issues, feel free to [email me](mailto:yinan.email@gmail.com). 
