@@ -82,7 +82,7 @@
   
   - 在左侧 “Code and automation” 下找到 “Pages” 点击进入
   
-  - 将 “Source" 设置成 "GitHub Actions", 然后点击 “Save”
+  - 将 “Source" 设置成 "auto-commit" 分支, 选择 “/(docs)”, 点击 “Save”
 
 ## 2 设置需要合并, 过滤, 总结的 RSS 源
 
@@ -94,7 +94,7 @@
 
 ```
 [cfg]
-base = "rss/"
+base = "docs/"
 ```
 
 然后在接下来的三行更改**目标语言, 关键词数量, 和总结长度**。之后的代码是 feed-specific 的配置, 格式如下, 首先是3个必填项目:
@@ -116,7 +116,9 @@ base = "rss/"
 
 点击最下边的 “Commit changes” 提交修改。
 
-## 3.1 修改 main.py 中的仓库名称（如果你在 1.1 中使用了默认仓库名称，可以跳过这一步）
+## 3.1 修改 main.py 中的仓库名称
+
+**如果你在 1.1 中使用了默认仓库名称，可以跳过这一步）**
 
 - 进入 “main.py" 文件, 点击笔形图标, 编辑代码, 进入第 290 行,  修改 "https://{U_NAME}.github.io/RSS-GPT" 中的 RSS-GPT 为你的仓库名称。
 
@@ -124,7 +126,9 @@ base = "rss/"
 
 - 点击最下边的 “Commit changes” 提交修改。
 
-## 3.2 修改 workflow 文件 (如果你在 1.1 中 fork 了 auto-commit 分支, 并在 2 中修改的是 auto-commit 分支, 可以跳过这一步)
+## 3.2 修改 workflow 文件
+
+**(如果你在 1.1 中 fork 了 auto-commit 分支, 并在 2 中修改的是 auto-commit 分支, 可以跳过这一步)**
 
 这一步是为了让 GitHub Actions 在 main 分支中自动提交修改, 而不是在 auto-commit 分支中提交。
 

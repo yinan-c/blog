@@ -79,7 +79,7 @@ Enable GitHub Actions access to Pages:
   
   - Find "Pages" under "Code and automation" in left sidebar and click in
   
-  - Set "Source" as "GitHub Actions", then click "Save"
+  - Set "Source" as "auto-commit" branch, choose "/(docs)", click "Save"
 
 ## 2. Configure RSS sources to merge, filter and summarize
 
@@ -91,7 +91,7 @@ Open the "config.ini" file, click the pencil icon at top right to edit code and 
 
 ```
 [cfg] 
-base = "rss/"
+base = "docs/"
 ```
 
 Then modify the **target language, number of keywords, and summary length** in the next 3 lines. The following code is feed-specific configs, format is:
@@ -114,7 +114,9 @@ Next are optional filter configs, note all 3 must be set together or not set:
 
 Click "Commit changes" at bottom to submit edits. 
 
-## 3.1 Modify `main.py` (if you used default repo name in 1.1, you can skip this step)
+## 3.1 Modify `main.py` 
+**
+(if you used default repo name in 1.1, you can skip this step)**
 
 - Open "main.py" file, click the pencil icon to edit code, go to line 290 and modify the "RSS-GPT" in "https://{U_NAME}.github.io/RSS-GPT" to your repo name.
 
@@ -122,7 +124,9 @@ Click "Commit changes" at bottom to submit edits.
 
 - Click "Commit changes" at bottom to submit edits.
 
-## 3.2 Modify `cron_job.yml` (if you forked "auto-commit" branch in 1.1 and edited auto-commit branch in Step 2, you can skip this step)
+## 3.2 Modify `cron_job.yml` 
+
+**(if you forked "auto-commit" branch in 1.1 and edited auto-commit branch in Step 2, you can skip this step)**
 
 This step is to let GitHub Actions automatically commit to main branch instead of auto-commit branch.
 
