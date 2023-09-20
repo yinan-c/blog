@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2023-09-11 18:14:50+01:00'
 
 # 文章修改时间
-mtime = '2023-09-13 15:19:23+01:00'
+mtime = '2023-09-20 02:39:54+01:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = 'e803ad612c7705ffd3523ae26945d3914ae99018'
+checksum = '2f467e822d4320987cd9cbdcfa2245d0cff1d1b8'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -35,4 +35,16 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = ''' A detailed configuration guide for RSS-GPT, a script that uses ChatGPT to summarize your personalized RSS feeds. '''
+abstract = '''Introduction
+
+yinan-c/RSS-GPT 
+RSS-GPT Introduction
+中文指南
+
+Prerequisites
+
+GitHub account
+OpenAI API Key (get it at OpenAI website)
+
+1. GitHub Actions deployment
+The main idea is to use GitHub Actions to run Python scripts periodically, the script ca...'''
