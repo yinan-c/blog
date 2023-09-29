@@ -35,16 +35,4 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''项目地址与功能介绍
-
-yinan-c/RSS-GPT
-RSS-GPT介绍
-English manual
-
-需要准备的东西
-
-GitHub 账号
-OpenAI API Key （可以在这里建立账号申请）
-
-1 GitHub Actions 部署
-大致原理是使用 GitHub Actions 定时运行 Python 脚本,...'''
+abstract = '''关于 yinan-c/RSS-GPT 仓库的详细使用指南。'''

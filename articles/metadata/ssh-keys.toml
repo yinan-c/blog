@@ -35,4 +35,4 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''Step-by-step guide to setup SSH keys for GitHub and remote servers.'''
+abstract = '''A step-by-step guide to setup SSH keys for GitHub and remote servers.'''
