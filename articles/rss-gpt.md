@@ -32,4 +32,4 @@ RSS 是我一直在用并且非常喜欢的信息获取方式，你可以把你�
 
 我写了一篇详细的[指南](https://yinan-c.github.io/rss-gpt-manual-zh.html)，希望能帮助到大家。
 
-这里也汇集几条我公开的 [RSS 源](https://yinan.me/RSS-GPT/rss/)，欢迎大家订阅。
+这里也汇集几条我公开的 [RSS 源](https://yinan.me/RSS-GPT/)，欢迎大家订阅。
