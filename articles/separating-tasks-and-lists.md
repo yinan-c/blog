@@ -68,4 +68,3 @@ For example, to achieve inbox zero, you can also tag/move/schedule your captures
 - [Yet another DevonThink topic - Software - MPU Talk](https://talk.macpowerusers.com/t/yet-another-devonthink-topic/15628)
 - [The PARA Method: A Universal System for Organizing Digital Information](https://fortelabs.co/blog/para/)
 - [How to Organize with Smart Rules](https://www.devontechnologies.com/blog/20201110-organize-with-smart-rules)
-- [每个人每天都只有24小时，希望我的选择真的是我的选择 | 枫言枫语](https://justinyan.me/post/5790)
