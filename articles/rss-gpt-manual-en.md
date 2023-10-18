@@ -15,7 +15,7 @@
 
 The main idea is to use GitHub Actions to run Python scripts periodically, the script calls OpenAI API to generate summaries and append them to original RSS entries, then generate a new xml file, and commit it to the repo. 
 
-All contents in the repo folder are deployed on GitHub Pages via GitHub Actions, so you can access the xml file via your GitHub Pages URL, and subscribe to it like normal RSS feeds in any RSS reader.
+All contents in the repo folder are deployed on GitHub Pages, so you can access the xml file via your GitHub Pages URL, and subscribe to it like normal RSS feeds in any RSS reader.
 
 If you don't want to deploy on GitHub Pages, you can also subscribe to the raw xml file in the repo (URL starts with `https://raw.githubusercontent.com`), e.g. the xml file URL of this repo is [https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/docs/brett-terpstra.xml](https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/docs/brett-terpstra.xml).
 
@@ -68,7 +68,7 @@ Enable GitHub Actions access to Pages:
 
   - Click "Settings" in top menu bar
   - Find "Pages" under "Code and automation" in left sidebar and click in
-  - Set "Source" as "GitHub Actions", then click "Save"
+  - Set source as deploy from main branch /docs folder.
 
 ## 2. Configure RSS sources to merge, filter and summarize
 
@@ -102,7 +102,7 @@ Click "Commit changes" at bottom to submit edits.
 - (Optional) Modify prompt at lines 113-129 based on your needs for better summaries. 
 - Click "Commit changes" at bottom to submit edits.
 
-## 4. Test GitHub Actions 
+## 4. Configure and test GitHub Actions 
 
 Go to the project, click "Actions" in top menu bar, click "cron_job" and choose "Run workflow".
 

@@ -15,7 +15,7 @@
 
 大致原理是使用 GitHub Actions 定时运行 Python 脚本, 脚本调用 OpenAI API 生成总结附在 RSS 原文之前, 生成一个新的 xml 文件, 并自动 commit 到仓库中 docs/ 文件夹内。
 
-文件夹内所有内容都将通过 Github Actions 自动部署在 GitHub Pages 上, 这样就可以通过你的 Pages 地址访问到这个 xml 文件, 然后就可以在任何 RSS 阅读器中订阅。
+文件夹内所有内容都将自动部署在 GitHub Pages 上, 这样就可以通过你的 Pages 地址访问到这个 xml 文件, 然后就可以在任何 RSS 阅读器中订阅。
 
 如果你不想部署在 GitHub Pages, 应该也可以通过直接访问仓库中的 xml 原文件（地址以 `https://raw.githubusercontent.com` 开头）来订阅, 比如说我这个仓库的 xml 文件地址是 [https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/docs/brett-terpstra.xml](https://raw.githubusercontent.com/yinan-c/RSS-GPT/main/docs/brett-terpstra.xml)。
 
@@ -84,7 +84,7 @@
   
   - 在左侧 “Code and automation” 下找到 “Pages” 点击进入
   
-  - 将 “Source" 设置成 "GitHub Actions", 然后点击 “Save”
+  - 将 Source 设置为 deploy from main branch /docs folder. 即从 main 分支的 docs 文件夹部署到 Pages 上。
 
 ## 2 设置需要合并, 过滤, 总结的 RSS 源
 
@@ -124,7 +124,7 @@ base = "docs/"
 
 - 点击最下边的 “Commit changes” 提交修改。
 
-## 4 测试 GitHub Actions
+## 4 开启并测试 GitHub Actions
 
 进入项目, 点击上方菜单栏的 "Actions", 点击 “cron_job", 选择 “Run workflow"
 
