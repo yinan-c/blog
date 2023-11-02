@@ -42,3 +42,5 @@ pairs = [
 
 # 文章摘要
 abstract = '''{{art.abstract}}'''
+
+summary = '''{{art.summary}}'''
