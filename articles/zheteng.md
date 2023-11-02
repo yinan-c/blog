@@ -1,7 +1,8 @@
 # 折腾
 
-最近又开始折腾博客了，目前 Pyboke 博客能够实现的功能比较简单，所以会有很多想法。虽然这些想法也不一定都会实现，但还是想记录下来。
-以下想法有些是直接接入第三方 API 修改模板即可实现， 有些则可能需要修改 Pyboke 源代码。
+最近又开始折腾博客了，我用的是 [Pyboke](https://github.com/yinan-c/pyboke)，一个通过 Python 实现的简约的博客生成器。
+
+简约，换句话说就是能够实现的功能比较简单。所以会有很多想法, 有些接入第三方 API 修改模板即可实现，有些则可能需要修改 Pyboke 源代码。虽然这些想法也不一定都会实现，但还是记录下来，之后有时间再慢慢折腾。
 
 ## ChatGPT 总结
 
@@ -13,7 +14,11 @@
 2. 文章的 metadata 是在运行 `Pyboke` 之后才生成的，如果要加条件判断，那么就需要在生成 metadata 之后再运行脚本进行 ChatGPT 总结。
 3. 或者，是否应该引入 YAML 格式的 front matter，来代替现在 toml 格式分开存储的 metadata？这样就可以在文章中直接修改，而不需要在生成 metadata 之后再手动修改。
 
-在这些问题还没有定论之间，我还没有想要把自动总结加入 Pyboke 的源代码。目前以我可怜的博文数量以及更新频率来看，手动让 GPT-4 总结然后添加到 metadata 然后修改 Jinja 渲染模板，应该就够了。 如果你想要折腾出自动化的方案，并且用的是 Hugo，可以参考大大的小蜗牛的[这篇文章](https://eallion.com/ai-summary/)。
+在这些问题还没有定论之间，我还没有想要把自动总结加入 Pyboke 的源代码。目前以我可怜的博文数量以及更新频率来看，手动让 GPT-4 总结然后添加到 metadata 然后修改 Jinja 渲染模板，应该就够了。 
+
+我还在考虑是否需要将 AI summary 附加在 RSS 上，那么在这种情况下，需要在发布文章之前就附上总结，并且修改 `atom.xml` 的模板使其包含总结信息。这样自动化总结或许是更好的方案。
+
+如果你想要折腾自动化的方案，并且用的是 Hugo，可以参考大大的小蜗牛的[这篇文章](https://eallion.com/ai-summary/)。
 
 ## 评论和点赞
 
@@ -21,7 +26,7 @@
 
 最终决定用了[giscus](https://giscus.app/)，利用的是 [GitHub Repository](https://github.com/yinan-c/pages-comment) 的 discussions 功能，所以既可以在 Repo 里评论，也可在博客内评论。好在设置非常简单，在 template html 加上一段 js 脚本即可。除了评论点赞必须要登录 GitHub 账号外，目前没有什么太大问题。
 
-这两天又在逛博客，发现了一些很有趣的方案，[Yuxi&Yuqi](https://yuxiyuqi.com)的评论是用的[twikoo](https://twikoo.js.org/en/)，[koobai](https://koobai.com/) 用了[Artalk](https://artalk.js.org/en/)，[子舒的博客](https://zishu.me/)用了 [emaction](https://github.com/emaction/emaction.frontend) 来实现 emoji reaction，点赞无需登录，也可以自己部署[后端](https://github.com/emaction/emaction.backend)。后续可能会考接入我的博客。
+这两天又在逛博客，发现了一些很有趣的方案，[Yuxi&Yuqi](https://yuxiyuqi.com)的评论是用的[twikoo](https://twikoo.js.org/en/)，[koobai](https://koobai.com/) 用了 [Artalk](https://artalk.js.org/en/)，[子舒的博客](https://zishu.me/)用了 [emaction](https://github.com/emaction/emaction.frontend) 来实现 emoji reaction，点赞无需登录，也可以自己部署[后端](https://github.com/emaction/emaction.backend)。后续可能会考接入我的博客。
 
 ## 全文 RSS
 
