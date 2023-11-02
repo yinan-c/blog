@@ -36,3 +36,4 @@ pairs = [
 
 # 文章摘要
 abstract = '''Some thoughts on task management.'''
+summary = '''This article explores the author’s shift in task management strategy, emphasizing the importance of separating actionable tasks and non-actionable items. Previously cluttered with both types of items, the author now uses Things 3 exclusively for tasks and Devonthink for notes, documents, and readlist items. This approach, inspired by a discussion on the MPU forum, aims to maintain a clean and focused task manager, while non-actionable items are sorted and stored in Devonthink. The author highlights the issue of a rapidly filling inbox in Things 3 and proposes his new strategy as an effective solution, ultimately aiming for a clearer mind and more efficient workflow.'''

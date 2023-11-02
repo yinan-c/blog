@@ -36,3 +36,5 @@ pairs = [
 
 # 文章摘要
 abstract = '''A step-by-step guide to setup SSH keys for GitHub and remote servers.'''
+
+summary = '''This article provides a detailed guide on setting up SSH keys for GitHub and remote servers, highlighting the security benefits of using SSH keys for secure remote communication. It describes two main methods: using ssh-keygen and the 1Password SSH agent, providing step-by-step instructions and configuration guidelines for both. Additionally, the article emphasizes the importance of protecting keys with a passphrase and recommends using 1Password for managing SSH keys and other sensitive information. References for further reading and documentation are also provided.'''

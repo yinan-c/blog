@@ -38,6 +38,18 @@
 
 {% block main %}
 
+{% if art.summary %}
+<div class="post-ai">
+    <div class="ai-title">
+        <div class="ai-title-text">AI Summary by GPT-4.0</div>
+    </div>
+
+    <div class="ai-explanation ai-explanation-content">
+        {{ art.summary }}
+    </div>
+</div>
+{% endif %}
+
 
 {{ art.content|safe }}
 
