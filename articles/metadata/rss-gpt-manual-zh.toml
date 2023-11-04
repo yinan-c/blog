@@ -36,4 +36,4 @@ pairs = [
 
 # 文章摘要
 abstract = '''关于 yinan-c/RSS-GPT 仓库的详细使用指南。'''
-summary = ''''''
+summary = '''RSS-GPT 是一个使用 GitHub Actions 自动运行 Python 脚本的项目，该脚本通过调用 OpenAI API 为 RSS 源生成总结。用户需准备 GitHub 账号、OpenAI API 密钥，并设置必要的 Repository Secrets。项目支持自定义订阅源、过滤规则、总结长度等，生成的新 xml 文件会自动部署到 GitHub Pages，允许在任何 RSS 阅读器中订阅。项目也提供了定制化的功能，包括修改刷新频率和关闭 AI 总结功能。'''

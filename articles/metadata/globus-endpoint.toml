@@ -37,4 +37,4 @@ pairs = [
 # 文章摘要
 abstract = '''
 With Globus, you can easily, reliably and securely move, share, & discover data no matter where it lives – from a supercomputer, lab cluster, tape archive, public cloud or laptop.'''
-summary = ''''''
+summary = '''Setting up a Globus endpoint on your servers allows for easy and secure data management across various storage systems. To do this, log in to your cluster with X11 forwarding, install Globus Connect Personal, and initiate it in CLI mode. Upon receiving a login URL and completing authorization in your web browser, you label the endpoint for future reference. Adjust the config-paths to access other directories like $SCRATCH. Starting the client on the cluster will activate your endpoint, enabling data transfer via the Globus web interface. For continuous background operation, use the `nohup` command. To stop the service, kill the process using its PID.'''
