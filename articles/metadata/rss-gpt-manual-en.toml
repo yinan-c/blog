@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2023-09-11 18:14:50+01:00'
 
 # 文章修改时间
-mtime = '2023-10-18 01:17:57+01:00'
+mtime = '2023-11-07 22:15:43+00:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = '5f8fe41ad02eb865443488914452bf1ee7d86f26'
+checksum = '61af26c3783e970270a00269713884994c9d63b3'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -36,4 +36,5 @@ pairs = [
 
 # 文章摘要
 abstract = '''How to configure RSS-GPT, using AI to summarize your RSS feed.'''
+
 summary = '''The RSS-GPT tool uses GitHub Actions to automatically generate summaries for RSS feeds using the OpenAI API, and commits a new XML file to the user's GitHub repo. Users can access this feed through GitHub Pages or the raw XML file URL. The process involves forking the RSS-GPT project, setting repository secrets, and configuring the desired RSS sources and filters in `config.ini`. Users can modify the Python script `main.py` and test the setup via GitHub Actions. The system defaults to using GPT-3.5 Turbo for cost-efficiency but can be adjusted for other models. It's designed for easy updates and customization of summaries without repeated API calls for existing articles.'''

@@ -51,7 +51,7 @@ This smart rule function is similar to mail rules in email clients, where you ca
 
 I can use Things 3 as a pure task manager which I can start working on right away, and I use Devonthink as a readlist/documents database which I can search for information when I need them.
 
-# Some final words
+## Some final words
 
 Things 3 alone works great as a list/task manager, which can serve for multiple purposes. Despite the inability to store files, it can still be used as a proper readlist, a bookmark manager, a notes database, etc.
 

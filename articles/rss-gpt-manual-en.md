@@ -144,8 +144,9 @@ For more info on cron syntax, see [crontab docs](https://crontab.guru/) or [GitH
 - Regarding the usage of the OpenAI API, in order to minimize costs as much as possible, the following default measures have been adopted for this project:
 
   - All unrelevent content (images, frames, HTML tags etc.) are removed before sending to OpenAI API, in order to reduce the token length and cost.
-  - Different models are selected based on text length, and if the text length exceeds 16k, the first 16k characters will be used with GPT-3.5 Turbo 16K. 
-  - Considering GPT-4 costs about 10 times more than GPT-3.5 Turbo, GPT-3.5 Turbo is used by default. If you want to use a different model, you can modify the model parameter passed to the `gpt_summary` function of lines 227-243 of main.py, e.g. `model="your_model"`. Please refer to the [OpenAI API Pricing](https://openai.com/pricing/) for different prices of different OpenAI models.
+
+  - If the text length exceeds 16k, `gpt-4-1106-preview` will be used, otherwise `GPT-3.5 Turbo` is used by default. If you want to use a different model, you can modify the model parameter passed to the `gpt_summary` function of lines 227-243 of main.py, e.g. `model="your_model"`. Please refer to the [OpenAI API Pricing](https://openai.com/pricing/) for different prices of different OpenAI models.
+  
   - The script will read the xml files already existing in the docs/ folder. Existing articles will not be summarized again, so OpenAI API will not be repeatedly consumed. 
 
 ### About repo updates

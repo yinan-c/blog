@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2023-09-20 17:20:56+01:00'
 
 # 文章修改时间
-mtime = '2023-09-29 22:02:44+01:00'
+mtime = '2023-11-04 15:41:59+00:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = '2d730b22ad472f3c03ef667cb24154657fac1b5c'
+checksum = '2164eb76e840a0f06ae28534560cd8a8833e9318'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -36,4 +36,5 @@ pairs = [
 
 # 文章摘要
 abstract = '''Some thoughts on task management.'''
+
 summary = '''This article explores the author’s shift in task management strategy, emphasizing the importance of separating actionable tasks and non-actionable items. Previously cluttered with both types of items, the author now uses Things 3 exclusively for tasks and Devonthink for notes, documents, and readlist items. This approach, inspired by a discussion on the MPU forum, aims to maintain a clean and focused task manager, while non-actionable items are sorted and stored in Devonthink. The author highlights the issue of a rapidly filling inbox in Things 3 and proposes his new strategy as an effective solution, ultimately aiming for a clearer mind and more efficient workflow.'''
