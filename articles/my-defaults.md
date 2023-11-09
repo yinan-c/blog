@@ -24,7 +24,7 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 
 - 🙍🏻‍♂️ **Contacts Management**: Contacts.app
 
-- 🔎 **Browser**: Safari on iOS, and [Arc](https://arc.net/) on my Mac
+- 🌐 **Browser**: Safari on iOS, and [Arc](https://arc.net/) on my Mac
 
 - 💬 **Chat**: [WeChat](https://weixin.qq.com/), [Telegram](https://telegram.org/), [Slack](https://slack.com/) and [Discord](https://discord.com/)
 
@@ -33,6 +33,10 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 - 📑 **Read-it-Later**: [Omnifocus](https://www.omnigroup.com/omnifocus/) and [DEVONthink](https://www.devontechnologies.com/apps/devonthink)
 
 - 📜 **Word Processing**: [Google Docs](https://www.google.com/docs/about/)
+
+- 📈 **Spreadsheets**:  [Google Sheets](https://www.google.com/sheets/about/)
+
+- 📊 **Presentations**: [Keynote](https://www.apple.com/keynote/), and PDF generated from markdown using [Pandoc](https://pandoc.org) or [LaTeX](https://latex-project.org).
 
 - 🛒 **Shopping List**: [OmniFocus](https://www.omnigroup.com/omnifocus/)
 
