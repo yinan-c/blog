@@ -20,23 +20,23 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 
 - 📁 **Cloud File Storage**: iCloud Drive (Personal) and Google Drive (Work)
 
-- 📖 **RSS**: Previously [Reeder](https://www.reederapp.com/) with [FreshRSS](https://www.freshrss.org/), Now [NetNewsWire](https://netnewswire.com/) iCloud Account
+- 📖 **RSS**: Previously [Reeder](https://www.reederapp.com/) with [FreshRSS](https://www.freshrss.org/), Now [NetNewsWire](https://netnewswire.com/) iCloud account
 
 - 🙍🏻‍♂️ **Contacts Management**: Contacts.app
 
 - 🌐 **Browser**: Safari on iOS, and [Arc](https://arc.net/) on my Mac
 
-- 💬 **Chat**: [WeChat](https://weixin.qq.com/), [Telegram](https://telegram.org/), [Slack](https://slack.com/) and [Discord](https://discord.com/)
+- 💬 **Chat**: [WeChat](https://wechat.com/), [Telegram](https://telegram.org/), [Slack](https://slack.com/) and [Discord](https://discord.com/)
 
 - 🔖 **Bookmarks**: [Anybox](https://anybox.app/) and [DEVONthink](https://www.devontechnologies.com/apps/devonthink)
 
 - 📑 **Read-it-Later**: [OmniFocus](https://www.omnigroup.com/omnifocus/) and [DEVONthink](https://www.devontechnologies.com/apps/devonthink)
 
-- 📜 **Word Processing**: [Google Docs](https://www.google.com/docs/about/)
+- 📜 **Word Processing**: Google Docs
 
-- 📈 **Spreadsheets**:  [Google Sheets](https://www.google.com/sheets/about/)
+- 📈 **Spreadsheets**: Google Sheets
 
-- 📊 **Presentations**: [Keynote](https://www.apple.com/keynote/), and PDF generated from Markdown using [Pandoc](https://pandoc.org) or [LaTeX](https://latex-project.org).
+- 📊 **Presentations**: Keynote.app, and PDF generated from Markdown using [Pandoc](https://pandoc.org) or [LaTeX](https://latex-project.org).
 
 - 🛒 **Shopping List**: [OmniFocus](https://www.omnigroup.com/omnifocus/)
 
@@ -46,9 +46,9 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 
 - 📰 **News**: From podcast, RSS feeds and Twitter.
 
-- 🎵 **Music**: [Apple Music](https://www.apple.com/apple-music/) 
+- 🎵 **Music**: Apple Music, sometimes on [Bilibili](https://www.bilibili.com/)
 
-- 🎤 **Podcast**: [小宇宙](https://apps.apple.com/gb/app/%E5%B0%8F%E5%AE%87%E5%AE%99-%E4%B8%80%E8%B5%B7%E5%90%AC%E6%92%AD%E5%AE%A2/id1488894313) for Chinese channels and [Apple Podcasts](https://www.apple.com/apple-podcasts/) for all others. I am also using [Podwise.xyz](https://podwise.xyz/) as an AI tool.
+- 🎤 **Podcast**: [小宇宙](https://apps.apple.com/gb/app/%E5%B0%8F%E5%AE%87%E5%AE%99-%E4%B8%80%E8%B5%B7%E5%90%AC%E6%92%AD%E5%AE%A2/id1488894313) for Chinese channels and Apple Podcasts for all others. I am also using [Podwise.xyz](https://podwise.xyz/) as an AI tool.
 
 - 🔐 **Password Management**: [1Password](https://1password.com/)
 
