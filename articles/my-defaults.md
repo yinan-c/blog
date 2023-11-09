@@ -20,7 +20,7 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 
 - 📁 **Cloud File Storage**: iCloud Drive (Personal) and Google Drive (Work)
 
-- 📖 **RSS**: [NetNewsWire](https://netnewswire.com/) iCloud Account
+- 📖 **RSS**: Previously [Reeder](https://www.reederapp.com/) with [FreshRSS](https://www.freshrss.org/), Now [NetNewsWire](https://netnewswire.com/) iCloud Account
 
 - 🙍🏻‍♂️ **Contacts Management**: Contacts.app
 
@@ -30,7 +30,7 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 
 - 🔖 **Bookmarks**: [Anybox](https://anybox.app/) and [DEVONthink](https://www.devontechnologies.com/apps/devonthink)
 
-- 📑 **Read-it-Later**: [Omnifocus](https://www.omnigroup.com/omnifocus/) and [DEVONthink](https://www.devontechnologies.com/apps/devonthink)
+- 📑 **Read-it-Later**: [OmniFocus](https://www.omnigroup.com/omnifocus/) and [DEVONthink](https://www.devontechnologies.com/apps/devonthink)
 
 - 📜 **Word Processing**: [Google Docs](https://www.google.com/docs/about/)
 
@@ -42,13 +42,13 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 
 - 🍴 **Meal Planning (as Recipe Management)**: N/A, not that I don't eat/cook, but I don't have a meal planning system.
 
-- 💰 **Budgeting and finance**: [Cookies](https://apps.apple.com/gb/app/cookie-%E8%AE%B0%E8%B4%A6-money-manager/id1559943673)
+- 💰 **Budgeting and finance**: [Cookie](https://apps.apple.com/gb/app/cookie-%E8%AE%B0%E8%B4%A6-money-manager/id1559943673)
 
 - 📰 **News**: From podcast, RSS feeds and Twitter.
 
 - 🎵 **Music**: [Apple Music](https://www.apple.com/apple-music/) 
 
-- 🎤 **Podcast**: [小宇宙](https://xiaoyuzhoufm.com/) for Chinese channels and [Apple Podcasts](https://www.apple.com/apple-podcasts/) for all others. I am also using [Podwise.xyz](https://podwise.xyz/) as an AI tool.
+- 🎤 **Podcast**: [小宇宙](https://apps.apple.com/gb/app/%E5%B0%8F%E5%AE%87%E5%AE%99-%E4%B8%80%E8%B5%B7%E5%90%AC%E6%92%AD%E5%AE%A2/id1488894313) for Chinese channels and [Apple Podcasts](https://www.apple.com/apple-podcasts/) for all others. I am also using [Podwise.xyz](https://podwise.xyz/) as an AI tool.
 
 - 🔐 **Password Management**: [1Password](https://1password.com/)
 
