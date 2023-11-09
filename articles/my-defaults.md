@@ -36,7 +36,7 @@ Inspired by [Hemispheric Views 097 - Duel of the Defaults!](https://listen.hemis
 
 - 📈 **Spreadsheets**:  [Google Sheets](https://www.google.com/sheets/about/)
 
-- 📊 **Presentations**: [Keynote](https://www.apple.com/keynote/), and PDF generated from markdown using [Pandoc](https://pandoc.org) or [LaTeX](https://latex-project.org).
+- 📊 **Presentations**: [Keynote](https://www.apple.com/keynote/), and PDF generated from Markdown using [Pandoc](https://pandoc.org) or [LaTeX](https://latex-project.org).
 
 - 🛒 **Shopping List**: [OmniFocus](https://www.omnigroup.com/omnifocus/)
 
