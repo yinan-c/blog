@@ -10,13 +10,11 @@ This is how the suggestions will look like (I'm using zsh-autosuggestions here):
 
 ![](../output/pics/zsh.png)
 
-So this article is mainly about giving recommendations for both zsh and bash users on how to let the shell to remember your commands.
+So this article is mainly to give recommendations for both zsh and bash users on how to let the shell to remember your commands.
 
 ## 1. zsh-autosuggestions for zsh
 
-On my mac, zsh is the default shell, 
-
-The plugin `zsh-autosuggestions` is the one I want to recommend here. As the name suggests, it gives you suggestions for commands when you type in a zsh shell, and you can simple press the right arrow key to accept the suggestion.
+On my mac, zsh is the default shell, the plugin `zsh-autosuggestions` is the one I want to recommend here. As the name suggests, it gives you suggestions for commands when you type in a zsh shell, and you can simple press the right arrow key to accept the suggestion.
 
 To install it, you can follow the instructions on their [github repo](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md). You can use Antigen, Oh My Zsh, Homebrew or manually install it.
 
