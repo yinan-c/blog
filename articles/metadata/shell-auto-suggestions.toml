@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2024-02-01 17:09:21+00:00'
 
 # 文章修改时间
-mtime = '2024-02-01 18:04:18+00:00'
+mtime = '2024-02-01 22:26:17+00:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = '3dc77c2a8947ac4cfd94144fba230ba1b18865bb'
+checksum = '00919923b388c334b17249faa019e37d5f09d5fe'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -36,6 +36,7 @@ pairs = [
 
 # 文章摘要
 abstract = '''Recommendations for both zsh and bash users on how to let the shell to remember your commands.
+If you frequently use the same command or simply want to recall command line history, Take a look.
 '''
 
 summary = '''This article provides recommendations on how to enable auto-completion and auto-suggestion features in shell environments to enhance productivity. For zsh users, it suggests installing zsh-autosuggestions via methods like Oh My Zsh, highlighting a minimal configuration example that includes the plugin in the .zshrc file. For bash users, it recommends ble.sh, a script that offers similar functionalities and can be tested and installed following the provided instructions. The article underscores the importance of these features in improving the command-line experience by remembering and suggesting commands, making it particularly useful for repetitive tasks like SSH connections.
