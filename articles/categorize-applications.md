@@ -1,6 +1,6 @@
 # Organizing /Applications folder in macOS
 
-I struggle sometimes with hundreds of apps installed in my Applications apps.
+I struggle sometimes with hundreds of apps installed in my Applications folder.
 
 For frequently-used apps, Alfred is my best friend.
 For most of the time, I can open the app I want within a few keystrokes.

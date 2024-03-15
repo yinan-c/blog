@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2024-03-15 15:48:39+00:00'
 
 # 文章修改时间
-mtime = '2024-03-15 15:48:39+00:00'
+mtime = '2024-03-15 15:56:11+00:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = '84998bfa8426b5e5c7a0859747894af96462a231'
+checksum = '7f5caee4989ef63314a1645bc2654e56a9dd0e6a'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -35,9 +35,7 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''I struggle sometimes with hundreds of apps installed in my Applications apps.
-For frequently-used apps, Alfred is my best friend.
-For most of the time, I can open the app I want within a few keystrokes.
-But for other apps I use occationaly, it is hard to r...'''
+abstract = '''I struggle sometimes with hundreds of apps installed in my Applications.'''
 
-summary = ''''''
+summary = '''The article addresses organizing a cluttered macOS Applications folder. Using Alfred for common apps works well, but finding less frequently used apps is challenging due to non-descriptive icons and names. The author suggests categorizing apps like iOS's App Library and notes issues with moving apps, including broken functionalities. They recommend creating a '~/Applications' folder for app aliases to prevent these problems, using automation tools like Hazel for maintenance. This method facilitates finding apps without altering the original Applications folder, suitable for users overwhelmed by their app collection but unnecessary for those with fewer apps or who prefer minimal organization.
+'''

@@ -35,9 +35,6 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''想写这个很久了，推荐一些我常用并且喜欢的 macOS App，列表随时更新，括号内是我之前使用过的同类替代品。
-
-Alfred（目前我最喜欢的应用，Raycast 也是一个非常好的免费替代品）
-Keyboard Maestro（...'''
+abstract = '''推荐一些我常用并且喜欢的 macOS 软件。'''
 
 summary = ''''''
