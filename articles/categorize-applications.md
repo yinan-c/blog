@@ -37,15 +37,19 @@ Moreover, package installers(.pkg, not .dmg) would by default put the app to /Ap
 
 All this tells us it is better to leave as it is in the /Applications folder. So a good way to deal with this is to create a new folder and put the aliases of all the apps in the new folder. I use '~/Applications', and create alias are as simple as just dragging the apps to the new folder. An easy way to start - You can borrow the categories from the default categories groups using the tips [here](https://eshop.macsales.com/blog/40569-quick-tip-arrange-your-mac-apps-by-category-in-finder/).
 
-![](../output/pics/group.png)
+![](../output/pics/finder_info.png)
 
 ⌘ + J in the /Applications folder, group the apps by the default categories, and then move the apps in each group to different subfolders in the new folder. The groups might be too broad. Then you can start from there to modify the categories to your own preference.
 
-Okay, now app alias are in different subfolders, we have the confidence to find the non-frequently-used apps more easily. But what if there is a new app installed? For this, you can use Hazel or some automation tools (Automator, Keyboard Maestro,or other folder watcher) to script the process of creating alias and moving them to ~/Applications. 
+Okay, now app alias are in different subfolders, we have the confidence to find the non-frequently-used apps more easily. But what if there is a new app installed? What if we want to remove an app? To keep the system running, an important thing is to keep the alias in the ~/Applications folder up-to-date.
+
+For this, you can use Hazel or some automation tools (Automator, Keyboard Maestro, or other folder watcher) to script the process of creating alias and moving them to ~/Applications. Here is an example of how to do it with Hazel for the new app installed: 
 
 ![](../output/pics/Hazel_rule.png)
 
-Now everytime there is a new app installed, Hazel will create an alias in the ~/Applications folder. Just like put it in app inbox, I can review the app and decide which category it belongs to or just toss it to keep the total number reasonable.
+Now everytime there is a new app installed, Hazel will create an alias in the ~/Applications folder. Just like put it in app inbox, I can review the app and decide which category it belongs to or just toss it to keep the total number reasonable. Unfortunately, with Hazel, I don't find a good way to automatically remove the correspdonding alias when the app is removed. But I have made a [keyboard maestro macro](../output/pics/Update-alias-when-trashing-apps.kmmacros) to do this, inspired by this [post](https://forum.keyboardmaestro.com/t/solved-find-specific-files-inside-folders-and-sub-folders-and-then-copy-them/33042).
+
+![](../output/pics/km_macro.png)
 
 I did this because it bothers me sometimes, when I want to find a specific app but I forgot the name, and finding it without hierarchy is difficult. At the end of the day, you can always delete the apps you don't use to limit the number of apps. Then the flat structure of the /Applications folder is not a problem anymore.
 
