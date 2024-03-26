@@ -1,5 +1,7 @@
 # About
 
+- [中文简介](https://yinan.me/hello-world)
+
 Hi, I am Yinan, a PhD student in Physics.
  
 Since I started my PhD, I have been reading and learning a lot, by writing down tons of notes and worklogs. Most of my notes are Markdown files stored in an app called [Obsidian](https://obsidian.md/).
