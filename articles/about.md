@@ -11,6 +11,7 @@ Now, I finally decided to start one, thanks to a great tool [PyBoke](https://git
 ## About this blog
 
 This blog is created by a modified version of [PyBoke](https://github.com/yinan-c/pyboke), where I added features like full text RSS, navigation buttons, and abstracts on the homepage.
+
 The original version of PyBoke is created by [ahui2016](https://github.com/ahui2016).
 
 This blog is fully open source. All the articles in Markdown format, together with the templates I use on this website can also be found in the [GitHub repo](https://github.com/yinan-c/blog).
@@ -25,6 +26,7 @@ I am interested in many things, including but not limited to: RSS, macOS softwar
 
 - Twitter logo icons created by [Md Tanvirul Haque - Flaticon](https://www.flaticon.com/free-icon/twitter_3670151)
 - Email icon from [freepnglogos.com](https://www.freepnglogos.com/images/email-13765.html)
+- Matodon logo by Eugen Rochko &amp; other Mastodon contributors - https://blog.joinmastodon.org/, AGPL, https://commons.wikimedia.org/w/index.php?curid=120470930
 
 # License
 
