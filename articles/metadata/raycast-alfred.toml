@@ -1,0 +1,40 @@
+# 本文件采用 TOML 格式 https://toml.io/
+
+# 文章标题 [请勿手动修改，会自动获取]
+title = '''如何只用一个 Escape 键退出 Raycast - Get the Best of Both Worlds with Raycast and Alfred'''
+
+# 文章作者 [通常留空，自动等同于博客作者]
+author = ''''''
+
+# 文章创建时间
+ctime = '2024-04-15 12:47:09+01:00'
+
+# 文章修改时间
+mtime = '2024-04-15 12:47:09+01:00'
+
+# sha1, 用来判断文章内容有无变更 [请勿手动修改]
+checksum = 'e46d73d6470ee8cbdd47b801e3f5877115f6826e'
+
+# 是否忽略文章 (true/false)
+# 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
+ignored = false
+
+# HTML中的图片的最大宽度 (留空表示跟随总设定)
+img_width = ''
+
+# 是否执行自动替换 (0:跟随总设定, -1:不执行, 1:执行)
+replace = 0
+
+# 自动替换。例:
+# pairs =  [
+#   [ '''../output/pics/abc.jpg''', '''https://example.com/abc.jpg''' ],
+#   [ '''../output/pics/def.jpg''', '''https://example.com/def.jpg''' ],
+# ]
+pairs = [
+
+]
+
+# 文章摘要
+abstract = '''这篇文章主要想分享两件事，一是如何让 Raycast 能像 Alfred 一样只用一个 Escape 键退出搜索窗口，而不是每次摁一次只能一级一级得退出，二是如何利用 Deeplink 来同时使用 Raycast 和 Alfred'''
+
+summary = '''这篇文章介绍了如何改进Raycast，使其可以通过单个Escape键快速退出，类似于Alfred的功能，并探讨了如何利用Deeplink同时发挥Raycast和Alfred的优势。通过使用Keyboard Maestro宏，可以将单个Escape键映射为多次按键，以便快速退出Raycast的多级菜单。文章还讨论了如何通过Deeplink设置，在Raycast和Alfred之间互相调用对方的功能，从而结合两者的强项，例如快速文件搜索、通知样式等，以提升整体的效率和用户体验。'''
