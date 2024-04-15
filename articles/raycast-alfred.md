@@ -32,6 +32,6 @@ Raycast 和 Alfred 都支持 Deeplink，Raycast 中选中 command 摁下 Command
 
 同样地，而如果你想要在 Raycast 或者 keyboard Maestro, Shortcuts 等其他地方调用 Alfred workflow，Alfred 提供了 External Actions 来实现通过 Deeplink 或者 AppleScript 调用 Alfred 的 workflow。在 Raycast 中设置 Quicklinks 打开这个 URL 即可以实现调用 Alfred Workflow。
 
-![](../output/pics/alfreddeeplink.gif)
+![](../output/pics/alfred-deeplink.gif)
 
 
