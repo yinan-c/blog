@@ -2,7 +2,7 @@
 
 - [中文简介](https://yinan.me/hello-world)
 
-Hi, I am Yinan, a PhD student in Physics.
+Hi, I am Yinan, a PhD student in Physics. You can access this blog via [yinan.me](https://yinan.me/) and [yinan.ch](https://yinan.ch/).
  
 Since I started my PhD, I have been reading and learning a lot, by writing down tons of notes and worklogs. Most of my notes are Markdown files stored in an app called [Obsidian](https://obsidian.md/).
 
@@ -18,7 +18,7 @@ The original version of PyBoke is created by [ahui2016](https://github.com/ahui2
 
 This blog is fully open source. All the articles in Markdown format, together with the templates I use on this website can also be found in the [GitHub repo](https://github.com/yinan-c/blog).
 
-I use the theme [newcss](https://newcss.net/), and publish the blog on [GitHub Pages](https://pages.github.com/).
+I use the theme [newcss](https://newcss.net/), and publish the blog on [GitHub Pages](https://pages.github.com/) and [Cloudflare Pages](https://pages.cloudflare.com). You can also access the blog via [1nan.pages.dev](https://1nan.pages.dev/) or [yinan-c.github.io](https://yinan-c.github.io/).
 
 ## What will I write here?
 

@@ -1,7 +1,7 @@
 # Hello World
 
 ## 我是谁?
-我叫Yinan，目前在英国读博，物理专业。本科在中科大，也是学的物理。
+我叫Yinan，目前在英国读博，物理专业。本科在中科大，也是学的物理。这个博客的域名是 [yinan.me](https://yinan.me/) 和 [yinan.ch](https://yinan.ch/)。
 
 ## 为什么写博客？
 回想过去的25年，虽然有记录，写笔记的爱好，但是我还没有正经得把自己的所见所思整理，更没有发布。开始读博以后，有意识的把工作记录和日常见闻记录成文档，碎碎念积少成多，也就成为我在这个世界上来过的一点点证明。
@@ -17,7 +17,7 @@
 
 ## 博客用了什么
 本博客的文章用 Markdown 编写。
-采用了开源方案 [PyBoke](https://github.com/ahui2016/pyboke) 生成静态网站，自己在此基础上加了点[其他功能](https://github.com/yinan-c/pyboke/)，例如首页显示摘要，文章底部翻页，full text RSS 格式。使用的是 [newcss 主题](https://newcss.net/)，再通过 [GitHub Pages](https://pages.github.com/) 发布。
+采用了开源方案 [PyBoke](https://github.com/ahui2016/pyboke) 生成静态网站，自己在此基础上加了点[其他功能](https://github.com/yinan-c/pyboke/)，例如首页显示摘要，文章底部翻页，full text RSS 格式。使用的是 [newcss 主题](https://newcss.net/)，再通过 [GitHub Pages](https://pages.github.com/) 和 [Cloudflare Pages](https://pages.cloudflare.com) 发布。你也可以通过 [1nan.pages.dev](https://1nan.pages.dev/) 或 [yinan-c.github.io](https://yinan-c.github.io/) 访问。
 
 本博客所有源 markdown 文件，以及模板开源，托管在 [GitHub](https://github.com/yinan-c/blog) 上。
 
