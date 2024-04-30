@@ -1,4 +1,4 @@
 # Contact Me
 
-- Email: [yinan.email@gmail.com](mailto:yinan.email@gmail.com)
+- [Email](mailto:hello@yinan.me)
 - GitHub: [yinan-c](https://github.com/yinan-c)
