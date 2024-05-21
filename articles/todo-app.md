@@ -30,7 +30,7 @@
 
 我没有测试 Todoist，因为订阅费用实在太高，但是据说自然语言输入很好用。还有一些后来者：比如 GoodTask (in SetApp) 可以作为 Reminder 的强化版本。我没有考虑长期使用，所以这里不详细介绍了。
 
-最后，Todo 只是帮助 prioritize 的工具，为了 Get Things Done。
+最后，Todo 只是帮助 prioritize 和 focus 的工具，为了 Get Things Done，一张纸也可以做到这样。所以没有最好的 Todo App, 只有最适合你的。
 
 切忌陷入[效率陷阱](https://utgd.net/article/20657)。
 
