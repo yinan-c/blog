@@ -16,9 +16,15 @@
 
 我是从 OmniFocus 4 更新（2023年底）之后才开始重度使用的，上面其实已经把我这半年多用 OmniFocus 的感受列的差不多了，唯独有一点我还希望能够加上的，就是 Kanban View。
 
-我的任务通常会卡在某个节点比如说，计算中，或者等待回复，而不是简简单单的 0-1 两个状态，而 kanban 以及 Things 的 Heading 就很好地处理了这个问题。OmniFocus 虽然有 Nested Task，但是使用下来更像是子/母任务的从属关系，描述任务的状态我更多用的是 Tag，但是仍不如 Kanban 拖拽来的直观。
+我的任务通常会卡在某个节点比如说，计算中，或者等待回复，而不是简简单单的 0-1 两个状态，而 kanban 以及 Things 的 Heading 就很好地处理了这个问题。OmniFocus 虽然有 Nested Task，但是使用下来更像是子/母任务的从属关系，描述任务的状态我更多用的是标签，但是仍不如 Kanban 拖拽来的直观。
 
-题外话，Things vs OmniFocus 的比较于我有点像 Anybox 和 DEVONthink 的比较，一个简洁漂亮，功能单一，能完成他该完成的，一个功能强大 buggy，不够美观，
+>EDIT: 用 Tagging 作为 Kanban 的坏处在于它不是 exclusive 的，把任务从一个标签拖拽到另一个会让它同时打上两个标签，作为 Kanban 显然不理想。好在[论坛](https://discourse.omnigroup.com/t/sub-tag-exclusivity/41773/5)里有人提到用 Command + 拖拽就可以实现转移标签。
+
+>另外，如果需要一个 Kanban board based on Tagging，可以看一下[这个插件](https://omni-automation.com/omnifocus/plug-in-kanban-board.html)，试用了一下还不错，从脚本上实现 exclusive tagging，把不同 board 的按钮放在工具栏也能实现在不同标签(Board)之间转移任务。比如说我现在的工具栏和 kanban 长这样：
+
+![](../output/pics/kanban.png)
+
+题外话，Things vs OmniFocus 的比较于我有点像 Anybox 和 DEVONthink 的比较，一个简洁漂亮，功能单一，能完成他该完成的，一个功能强大，有点 buggy，不够美观，
 
 ## TickTick
 
@@ -26,7 +32,7 @@
 除了没有 Area 的概念，Project 多了可能会很乱。
 但是为什么不让我在 iOS 端用国内滴答的账号？
 
-EDIT: 感谢读者提醒，把 App 语言修改成中文后，登录界面底下可以切换成国内滴答。我再体验几天，后续可能会更新详细体验和比较。
+>EDIT: 感谢读者提醒，把 App 语言修改成中文后，登录界面底下可以切换成国内滴答。我再体验几天，后续可能会更新详细体验和比较。
 
 ## 其他玩家
 
