@@ -18,7 +18,7 @@
 
 我的任务通常会卡在某个节点比如说，计算中，或者等待回复，而不是简简单单的 0-1 两个状态，而 kanban 以及 Things 的 Heading 就很好地处理了这个问题。OmniFocus 虽然有 Nested Task，但是使用下来更像是子/母任务的从属关系，描述任务的状态我更多用的是 Tag，但是仍不如 Kanban 拖拽来的直观。
 
-题外话，Things vs OmniFocus 的比较于我有点像 Anybox 和 DEVONthink 的比较，一个功能强大 buggy 不够美观，一个简洁漂亮，功能单一，能完成他该完成的。
+题外话，Things vs OmniFocus 的比较于我有点像 Anybox 和 DEVONthink 的比较，一个简洁漂亮，功能单一，能完成他该完成的，一个功能强大 buggy，不够美观，
 
 ## TickTick
 
