@@ -1,7 +1,7 @@
 # 本文件采用 TOML 格式 https://toml.io/
 
 # 文章标题 [请勿手动修改，会自动获取]
-title = '''Trying Out Hoarder - The Self-Hosted Bookmark Manager'''
+title = '''Hoarder - The Self-Hosted Bookmark Manager'''
 
 # 文章作者 [通常留空，自动等同于博客作者]
 author = ''''''
@@ -10,10 +10,10 @@ author = ''''''
 ctime = '2024-05-24 18:56:37+01:00'
 
 # 文章修改时间
-mtime = '2024-05-24 19:00:21+01:00'
+mtime = '2024-05-24 19:04:45+01:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = 'fa1a03ffeefadd4bf580b9501408d6240685976b'
+checksum = '4b0a29f7e43ef6f858e2560f8e90039bffe73089'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里

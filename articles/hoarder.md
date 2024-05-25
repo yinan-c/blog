@@ -1,4 +1,4 @@
-# Trying Out Hoarder - The Self-Hosted Bookmark Manager
+# Hoarder - The Self-Hosted Bookmark Manager
 
 Trying out [Hoarder](https://github.com/hoarder-app/hoarder) app today, to see whether it would competes Anybox as my main bookmark manager. I do like self-hosting services, and I like hoarding stuff 🤭.
 
