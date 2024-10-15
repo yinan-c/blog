@@ -1,0 +1,41 @@
+# 本文件采用 TOML 格式 https://toml.io/
+
+# 文章标题 [请勿手动修改，会自动获取]
+title = '''整了个 NAS'''
+
+# 文章作者 [通常留空，自动等同于博客作者]
+author = ''''''
+
+# 文章创建时间
+ctime = '2024-10-15 23:45:18+01:00'
+
+# 文章修改时间
+mtime = '2024-10-15 23:45:18+01:00'
+
+# sha1, 用来判断文章内容有无变更 [请勿手动修改]
+checksum = 'fa9143506caa0dd0f57ea6c54a2053c58e99018f'
+
+# 是否忽略文章 (true/false)
+# 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
+ignored = false
+
+# HTML中的图片的最大宽度 (留空表示跟随总设定)
+img_width = ''
+
+# 是否执行自动替换 (0:跟随总设定, -1:不执行, 1:执行)
+replace = 0
+
+# 自动替换。例:
+# pairs =  [
+#   [ '''../output/pics/abc.jpg''', '''https://example.com/abc.jpg''' ],
+#   [ '''../output/pics/def.jpg''', '''https://example.com/def.jpg''' ],
+# ]
+pairs = [
+
+]
+
+# 文章摘要
+abstract = '''最近整了个 DS423+ 来代替之前的老旧 MacBook Pro + 一块外接硬盘的 NAS/homeserver 方案。
+我买了四块盘。 1、2 8TB 希捷盘做了 RAID1 冗余，其余两块略大的盘 Basic（希捷12TB 和 16 TB），另有两块 NVMe SSD 作...'''
+
+summary = ''''''
