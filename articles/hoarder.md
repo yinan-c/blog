@@ -1,6 +1,6 @@
 # Hoarder - The Self-Hosted Bookmark Manager
 
-Currently, I am using [wallabag](https://wallabag.org/) for read-it-later, [Anybox](https://anybox.app/) for bookmarking and quick retrival via Alfred, and [DEVONthink](https://www.devontechnologies.com/apps/devonthink) for archiving the booksmarks from wallabag and Anybox (I wrote [a script](https://github.com/yinan-c/Anybox-sync-Devonthink/blob/main/anybox_to_devonthink.py) that checks the Anybox API for new links and save them to DEVONthink, which is modified from the [Anybox alfredworkflow](https://alfred.app/workflows/anybox/anybox/)).
+Currently, I am using [wallabag](https://wallabag.org/) for read-it-later, [Anybox](https://anybox.app/) for bookmarking and quick retrival via Alfred, and [DEVONthink](https://www.devontechnologies.com/apps/devonthink) for archiving the booksmarks from wallabag and Anybox to better support full text searching (I wrote [a script](https://github.com/yinan-c/Anybox-sync-Devonthink/blob/main/anybox_to_devonthink.py) that checks the Anybox API for new links and save them to DEVONthink, which is modified from the [Anybox alfredworkflow](https://alfred.app/workflows/anybox/anybox/)).
 
 This workflow has been robust and reliable for me, but I am always looking for better selfhosted tools to improve my workflow. There are two things currently missing:
 

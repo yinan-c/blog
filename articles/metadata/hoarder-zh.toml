@@ -1,19 +1,19 @@
 # 本文件采用 TOML 格式 https://toml.io/
 
 # 文章标题 [请勿手动修改，会自动获取]
-title = '''Hoarder - The Self-Hosted Bookmark Manager'''
+title = '''Hoarder - 自托管 AI 书签管理软件'''
 
 # 文章作者 [通常留空，自动等同于博客作者]
 author = ''''''
 
 # 文章创建时间
-ctime = '2024-05-24 18:56:37+01:00'
+ctime = '2024-11-07 14:48:52+00:00'
 
 # 文章修改时间
-mtime = '2024-11-07 14:48:53+00:00'
+mtime = '2024-11-07 14:51:04+00:00'
 
 # sha1, 用来判断文章内容有无变更 [请勿手动修改]
-checksum = '7aaba14276b4381a8d98704049c37f97178b009d'
+checksum = '8b7fbfeb3c9cdcd1c43aa707900385e5195519e4'
 
 # 是否忽略文章 (true/false)
 # 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
@@ -35,7 +35,6 @@ pairs = [
 ]
 
 # 文章摘要
-abstract = '''Trying out Hoarder app today, to see whether it would competes Anybox as my main bookmark manager. I do like self-hosting services.
-At first sight, it feels like a complete app I can put in production, it has a iOS app with share sheet support, chrome exte...'''
+abstract = '''对于书签管理，我目前的工作流是这样的：自建 wallabag 保存稍后读，Anybox 管理书签并通过 Alfred 快速调用，然后用 DEVONthink 本地归档 wallabag 的稍候读和 Anybox 的书签，方便全文搜索。为了实现自...'''
 
 summary = ''''''
