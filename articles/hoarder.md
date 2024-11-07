@@ -1,10 +1,16 @@
 # Hoarder - The Self-Hosted Bookmark Manager
 
-Trying out [Hoarder](https://github.com/hoarder-app/hoarder) app today, to see whether it would competes Anybox as my main bookmark manager. I do like self-hosting services, and I like hoarding stuff 🤭.
+Currently, I am using [wallabag](https://wallabag.org/) for read-it-later, [Anybox](https://anybox.app/) for bookmarking and quick retrival via Alfred, and [DEVONthink](https://www.devontechnologies.com/apps/devonthink) for archiving the booksmarks from wallabag and Anybox (I wrote [a script](https://github.com/yinan-c/Anybox-sync-Devonthink/blob/main/anybox_to_devonthink.py) that checks the Anybox API for new links and save them to DEVONthink, which is modified from the [Anybox alfredworkflow](https://alfred.app/workflows/anybox/anybox/)).
 
-At first sight, it feels like a complete app I can put in production, it has a iOS app with share sheet support, chrome extension for easily save from browser, it saves note and images.
+This workflow has been robust and reliable for me, but I am always looking for better selfhosted tools to improve my workflow. There are two things currently missing:
 
-I really like the ability to have AI tagging for links and images so that I don't have to manually organize them. And the full text search is something Anybox doesn't have yet. While I write this article, May 2024, it is still under review in the [canny page of Anybox](https://anybox.canny.io/feature-requests/p/full-text-search).
+1. Full text search is something Anybox doesn't have yet. While I write this article, May 2024, it is still under review in the [canny page of Anybox](https://anybox.canny.io/feature-requests/p/full-text-search).
+
+2. Organizing bookmarks. I have a lot of bookmarks. I appreciate the Inbox ideology of Anybox, and the implementation of folders+tags+smart folders, but I still rely a lot on searching instead of mannually organizing (and again anybox is not providing full text search yet). It might help if there is an automatic organization feature like AI tagging or Smart Rules in DEVONthink.
+
+So, trying out [Hoarder](https://github.com/hoarder-app/hoarder) app today. I would like to see whether it would compete Anybox as my main bookmark manager. Also I do like self-hosting services, and hoarding stuff 🤭.
+
+At first sight, it feels like a complete app that I can directly put in production, it has a iOS app with share sheet support, chrome extension for easily save from browser, it saves note and images. And I really like the ability to have AI tagging for links and images so that I don't have to manually organize them. 
 
 However, there are some features missing before it can become my main bookmark manager. 
 
@@ -21,6 +27,6 @@ However, there are some features missing before it can become my main bookmark m
 
 Other features could be useful:
 - RSS subscription link
-  >Like what [linkding](https://github.com/sissbruecker/linkding) and [wallabag](https://wallabag.org/) provides. I am currently relying on RSS to sync my read-it-later from wallabag to DEVONthink.
+  >Like what [linkding](https://github.com/sissbruecker/linkding) and [wallabag](https://wallabag.org/) provides. I am currently relying on RSS to sync my read-it-later from wallabag to DEVONthink and to my kindle with [kindleear](https://github.com/cdhigh/kindleear).
 
-To conclude, it will not replace Anybox with Hoarder for now. But it is a very young and promising open-source app with rapid iteration, someday it might will.
+To conclude, I will not replace Anybox/wallabag with Hoarder for now. But it is a very young and promising open-source app with rapid iteration, someday it might will.
