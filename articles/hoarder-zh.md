@@ -14,12 +14,12 @@
 
 不过要完全替代 Anybox，还需要补齐以下几个功能：
 
-- [REST API](https://github.com/hoarder-app/hoarder/issues/43) - 用于数据导出和开发 Alfred 插件
-  > 目前只提供命令行工具，但我的应用部署在家庭服务器上，每次都要 SSH 连接太麻烦了。有个 REST API 会方便很多。
+- [REST API](https://github.com/hoarder-app/hoarder/issues/43) - 用于数据自动化导入/导出和开发 Alfred 插件
+  > 目前只提供命令行工具， REST API 会在[0.18.0 下一个版本支持](https://docs.hoarder.app/api/)
 - [便捷的数据导出和备份](https://github.com/hoarder-app/hoarder/issues/75)
   > 截图、本地缓存、链接等数据的导出功能还不完善。
 - 离线归档
-  > 现在只支持纯文本缓存和截图。据说后续会支持更多格式（截止2024年5月，已再规划中）。
+  > 现在只支持纯文本缓存和截图。据说后续会支持更多格式（截止2024年5月，已在规划中）。
   更新：到2024年11月，已经支持用 [monolith](https://github.com/Y2Z/monolith) 实现完整网页存档，解决了链接失效的问题。
 - [本地网页抓取](https://github.com/hoarder-app/hoarder/issues/172)
   > Anybox 和 [SingleFile 扩展](https://github.com/gildas-lormeau/SingleFile) 的配合就很完美，可以把登录后的或者付费墙后的内容直接通过 API 保存下来。

@@ -16,6 +16,7 @@ However, there are some features missing before it can become my main bookmark m
 
 - [REST API](https://github.com/hoarder-app/hoarder/issues/43) - for easily exporting data like links, tags, and for an Alfred workflow.
   > For now, it provides a CLI tool, but I am installing the app on my homeserver instead of my laptop. I will have to ssh to use the CLI, not ideal. A REST API would be good for remotely managing data.
+  > As of Nov 2024, it will be supported in the next version [0.18.0](https://docs.hoarder.app/api/).
 - [Easy data export and backup](https://github.com/hoarder-app/hoarder/issues/75)
   >I don't seem to find a very good way to export data easily, for example screenshots, local cache, links.
 - Offline archiving
