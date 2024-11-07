@@ -10,10 +10,11 @@ However, there are some features missing before it can become my main bookmark m
 
 - [REST API](https://github.com/hoarder-app/hoarder/issues/43) - for easily exporting data like links, tags, and for an Alfred workflow.
   > For now, it provides a CLI tool, but I am installing the app on my homeserver instead of my laptop. I will have to ssh to use the CLI, not ideal. A REST API would be good for remotely managing data.
-- Easy data export
+- [Easy data export and backup](https://github.com/hoarder-app/hoarder/issues/75)
   >I don't seem to find a very good way to export data easily, for example screenshots, local cache, links.
 - Offline archiving
   >For now, Hoarder supports plain text caching and screenshots. It would be good to see other formats supported (Planned, as of May 2024)
+  update: As of Nov 2024, it supports full page archival (using [monolith](https://github.com/Y2Z/monolith)) to protect against link rot.
 - [Local scrapper](https://github.com/hoarder-app/hoarder/issues/172) to fetch content after user login for some sites.
   >What I like about Anybox is its integration with [SingleFile extension](https://github.com/gildas-lormeau/SingleFile). It can directly save the .html downloaded to Anybox via API, so that any content behind paywall will also be downloaded. 
   >(It actually addresses the pity that SingleFile metadata only contains the first part of the full domain - it will only show something like https://github.com, when you directly download a  html with SingleFile metadata to DEVONthink)
