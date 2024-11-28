@@ -1,0 +1,40 @@
+# 本文件采用 TOML 格式 https://toml.io/
+
+# 文章标题 [请勿手动修改，会自动获取]
+title = '''RSSbrew 公开订阅源'''
+
+# 文章作者 [通常留空，自动等同于博客作者]
+author = ''''''
+
+# 文章创建时间
+ctime = '2024-11-28 16:53:50+00:00'
+
+# 文章修改时间
+mtime = '2024-11-28 16:58:22+00:00'
+
+# sha1, 用来判断文章内容有无变更 [请勿手动修改]
+checksum = '45b5f05ea6ff373ef6ccbed05d1a2dbb846074da'
+
+# 是否忽略文章 (true/false)
+# 被忽略的文章不会出现在最近列表、索引列表里，但仍会出现在 RSS 里
+ignored = false
+
+# HTML中的图片的最大宽度 (留空表示跟随总设定)
+img_width = ''
+
+# 是否执行自动替换 (0:跟随总设定, -1:不执行, 1:执行)
+replace = 0
+
+# 自动替换。例:
+# pairs =  [
+#   [ '''../output/pics/abc.jpg''', '''https://example.com/abc.jpg''' ],
+#   [ '''../output/pics/def.jpg''', '''https://example.com/def.jpg''' ],
+# ]
+pairs = [
+
+]
+
+# 文章摘要
+abstract = '''最近修了几个小 bug，把 images 上传到了 docker-hub，也做了个 demo 站点，账号密码 admin, changeme （当然公开使用的，也不要真的去 change）。为了让大家更方便体验 RSSbrew 的功能，我从自己的订阅里...'''
+
+summary = ''''''
