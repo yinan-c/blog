@@ -1,6 +1,6 @@
 # Friends
 
-暂时空空如也。
+- [大宇/Dayu](https://anotherdayu.com) 
 
 最近开始考虑增加友链，先准备从我订阅的 RSS 中发送一些申请。
 
