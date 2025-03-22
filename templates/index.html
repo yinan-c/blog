@@ -85,6 +85,20 @@
   });
 </script>
 <style>
+  /* Pagefind UI 变量 */
+  :root {
+    --pagefind-ui-scale: 1;
+    --pagefind-ui-primary: var(--nc-lk-1);
+    --pagefind-ui-text: var(--nc-tx-1);
+    --pagefind-ui-background: var(--nc-bg-1);
+    --pagefind-ui-border: var(--nc-bg-3);
+    --pagefind-ui-tag: var(--nc-bg-2);
+    --pagefind-ui-border-width: 2px;
+    --pagefind-ui-border-radius: 10px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: var(--nc-font-sans);
+  }
+
   /* 搜索按钮样式 - 圆形带边框 */
   .search-button {
     display: inline-flex;
@@ -93,19 +107,18 @@
     width: 25px;
     height: 25px;
     padding: 0;
-    background-color: var(--button-bg);
-    border: 1px solid var(--button-border);
+    background-color: var(--nc-bg-2);
+    border: 1px solid var(--nc-bg-3);
     border-radius: 50%;
     cursor: pointer;
     vertical-align: text-top;
     transition: all 0.2s ease;
   }
   .search-button:hover {
-    background-color: var(--button-hover);
     transform: scale(1.05);
   }
   .search-button svg {
-    color: var(--modal-text);
+    color: var(--nc-tx-1);
     width: 15px;
     height: 15px;
   }
@@ -117,7 +130,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--backdrop-color);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -125,15 +138,15 @@
   }
   .search-modal-content {
     position: relative;
-    background-color: var(--modal-bg);
-    color: var(--modal-text);
+    background-color: var(--nc-bg-1);
+    color: var(--nc-tx-1);
     padding: 40px 30px 30px;
     border-radius: 16px;
     width: 80%;
     max-width: 700px;
     max-height: 80vh;
     overflow-y: auto;
-    box-shadow: 0 4px 30px var(--modal-shadow);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   }
   /* macOS风格关闭按钮 */
   .macos-close-button {
@@ -157,14 +170,14 @@
     font-size: 16px;
     padding: 12px 15px 12px 45px; /* 增加内边距 */
     border-radius: 10px; /* 大圆角 */
-    border: 2px solid var(--search-border);
-    background-color: var(--pagefind-ui-background);
-    color: var(--pagefind-ui-text);
+    border: 2px solid var(--nc-bg-3);
+    background-color: var(--nc-bg-1);
+    color: var(--nc-tx-1);
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: all 0.2s ease;
   }
   .search-modal-content .pagefind-ui__search-input:focus {
-    border-color: var(--search-focus-border);
+    border-color: var(--nc-bg-3);
     box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   }
   .search-modal-content .pagefind-ui__search-clear {
@@ -192,7 +205,7 @@
     transition: background-color 0.2s;
   }
   .search-modal-content .pagefind-ui__result:hover {
-    background-color: var(--result-hover);
+    background-color: var(--nc-bg-2);
   }
 </style>
 <div id="links" style="text-align: center;">
