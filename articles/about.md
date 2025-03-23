@@ -32,7 +32,7 @@ I am interested in many things, including but not limited to: RSS, macOS softwar
 
 # License
 
-The articles I write are licensed under [CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). You are free to:
+The articles I write are licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). You are free to:
 - Share — copy and redistribute the material in any medium or format
 - Adapt — remix, transform, and build upon the material
 

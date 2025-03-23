@@ -22,7 +22,7 @@
 本博客所有源 markdown 文件，以及模板开源，托管在 [GitHub](https://github.com/yinan-c/blog) 上。
 
 ## 版权
-本博客所有文章采用 [CC BY NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 协议。您可以自由地：
+本博客所有文章采用 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 协议。您可以自由地：
 - 共享 — 在任何媒介以任何形式复制、发行本作品
 - 演绎 — 修改、转换或以本作品为基础进行创作
 
