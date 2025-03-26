@@ -4,49 +4,72 @@
   <h1>{{ blog.name }}</h1>
 </header>
 
-<!-- Include search modal component -->
-{% include "search.html" %}
+<!-- Include the search modal partial -->
+{% include "search_modal.html" %}
 
 <div id="links" style="text-align: center;">
-  <a href="https://github.com/yinan-c"><img src="pics/github-mark.png" alt="GitHub" width="25" height="25" style="vertical-align: text-top;"> </a> &nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/yinan-c"><img src="pics/github-mark.png" alt="GitHub" width="25" height="25" style="vertical-align: text-top;"></a>&nbsp;&nbsp;&nbsp;
   <a href="https://twitter.com/yinan_ch"><img src="pics/twitter.png" alt="Twitter" width="25" height="25" style="vertical-align: text-top;"></a>&nbsp;&nbsp;&nbsp;
   <a href="https://mastodon.social/@yinan"><img src="pics/mastodon.png" alt="Mastodon" width="25" height="25" style="vertical-align: text-top;"></a>&nbsp;&nbsp;&nbsp;
   <a href="contact.html"><img src="pics/email.png" alt="Email" width="25" height="25" style="vertical-align: text-top;"></a>&nbsp;&nbsp;&nbsp;
   <a href="atom.xml"><img src="https://wp-assets.rss.com/blog/wp-content/uploads/2019/10/10111557/social_style_3_rss-512-1.png" alt="RSS" width="25" height="25" style="vertical-align: text-top;"></a>&nbsp;&nbsp;&nbsp;
-  <!-- Search button - kept in original position -->
-  <button id="search-button" class="search-button search-trigger" aria-label="搜索">
+  <!-- Search button trigger -->
+  <button id="search-button" class="search-button" aria-label="Search">
     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="11" cy="11" r="8"></circle>
       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
   </button>
 </div>
+
+<style>
+  .search-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    background-color: var(--nc-bg-2);
+    border: 1px solid var(--nc-bg-3);
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: text-top;
+    transition: all 0.2s ease;
+  }
+  .search-button:hover {
+    transform: scale(1.05);
+  }
+  .search-button svg {
+    color: var(--nc-tx-1);
+    width: 15px;
+    height: 15px;
+  }
+</style>
 <h3>Archives</h3>
-<p>
-  <div id="archives">
-    <a href="title-index.html">Title-Index</a>
-    <a href="years.html">Timeline</a>
-    <a href="random.html">Random</a>
-    <a href="Friends.html">Friends</a>
-  </div>
-</p>
+<div id="archives">
+  <a href="title-index.html">Title-Index</a>
+  <a href="years.html">Timeline</a>
+  <a href="random.html">Random</a>
+  <a href="Friends.html">Friends</a>
+</div>
+
 <h3>Recent</h3>
 <ul>
   {% for art in articles %}
   <li>
-    <a href="{{art.id}}.html">{{art.title}}</a>
+    <a href="{{ art.id }}.html">{{ art.title }}</a>
     <span style="float: right; font-size: 0.8em; color: #888;">{{ art.ctime[:10] }}</span>
     <p style="clear: both;">{{ art.abstract }}</p>
   </li>
   {% endfor %}
 </ul>
+
 <h3>About</h3>
-<ul>
-  <div id="about">
-    <li><a href="about.html">About me</a></li>
-    <li><a href="my-open-source.html">My open-source projects</a></li>
-    <li><a href="RSS-GPT/index.html">Hosted RSS feeds</a></li>
-  </div>
+<ul id="about">
+  <li><a href="about.html">About me</a></li>
+  <li><a href="my-open-source.html">My open-source projects</a></li>
+  <li><a href="RSS-GPT/index.html">Hosted RSS feeds</a></li>
 </ul>
 {% endblock %}
 {% block footer %}
@@ -55,7 +78,8 @@
     © <a href="{{ blog.website }}">{{ blog.author }}</a>
     · <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
     · <a href="https://github.com/yinan-c/pyboke">PyBoke</a>
-    · <a href="atom.xml"> RSS </a>
+    · <a href="atom.xml">RSS</a>
   </p>
 </div>
 {% endblock %}
+
