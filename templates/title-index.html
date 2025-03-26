@@ -1,22 +1,22 @@
 {% extends "base.html" %}
-
 {% block title%}
   <title>标题索引 - {{ blog.name }}</title>
 {% endblock %}
-
 {% block main %}
-
 <header>
   <h3>标题索引 - {{ blog.name }}</h3>
 </header>
+
+<!-- Include search modal component -->
+{% include "search.html" %}
 
 <div id="footer-home-link">
   <a href="index.html">&lt; Home</a>
   <a href="years.html">&lt; Timeline</a>
   |
   <a href="random.html">Random &gt;</a>
+  <a href="#" class="search-trigger">Search &gt;</a>
 </div>
-
 <div id="title-index-list">
   {% for item in indexes %}
   <div class="TitleIndexItem">
@@ -24,7 +24,6 @@
   </div>
   {% endfor %}
 </div>
-
 <div id="title-indexes">
   {% for item in indexes %}
   <h3 id="{{item.id}}">{{ item.name }}</h3>
@@ -35,9 +34,7 @@
   </ul>
   {% endfor %}
 </div>
-
 {% endblock %}
-
 {% block footer %}
 <div id="footer" class="index-footer">
   <p id="footer-body">

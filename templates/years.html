@@ -1,19 +1,21 @@
 {% extends "base.html" %}
-
 {% block title%}
   <title> Timeline - {{ blog.name }}</title>
 {% endblock %}
-
 {% block main %}
 <header>
   <h3> Timeline - {{ blog.name }}</h3>
 </header>
+
+<!-- Include search modal component -->
+{% include "search.html" %}
 
 <div id="footer-home-link">
   <a href="index.html">&lt; Home</a>
   <a href="title-index.html">&lt; Title-Index</a>
   |
   <a href="random.html">Random &gt;</a>
+  <a href="#" class="search-trigger">Search &gt;</a>
 </div>
 
 {% for year in year_articles %}
@@ -24,9 +26,7 @@
   {% endfor %}
 </ul>
 {% endfor %}
-
 {% endblock %}
-
 {% block footer %}
 <div id="footer" class="index-footer">
   <p id="footer-body">

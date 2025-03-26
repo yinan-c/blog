@@ -2,7 +2,6 @@
 {% block title%}
   <title>{{ art.title }} - {{ blog.name }}</title>
 {% endblock %}
-
 {% block style %}
   <style>
   img {
@@ -15,44 +14,37 @@
   }
   </style>
 {% endblock %}
-
 {% block header %}
-
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <div id="header-created-at">
         <span style="font-size: 0.5 em; color: #888;">{{ art.ctime[0:10] }} </span>
     </div>
-
     <div id="header-home-link" style="font-size: 0.5 em;">
         <a href="index.html">&lt; Home</a>
         {% if not art.ignored %}
         <a href="years.html">&lt; Timeline</a>
         |
         <a href="random.html">Random &gt;</a>
+        <a href="#" class="search-trigger">Search &gt;</a>
         {% endif %}
     </div>
 </div>
-
 {% endblock %}
-
 {% block main %}
+<!-- Include search modal component -->
+{% include "search.html" %}
 
 {% if art.summary %}
 <div class="post-ai">
     <div class="ai-title">
         <div class="ai-title-text">AI Summary</div>
     </div>
-
     <div class="ai-explanation ai-explanation-content">
         {{ art.summary }}
     </div>
 </div>
 {% endif %}
-
-
 {{ art.content|safe }}
-
-
 <style>
 /* 创建一个容器来包含两个按钮 */
 .nav-buttons-container {
@@ -61,7 +53,6 @@
   gap: 10px; /* 按钮之间的间距 */
   margin: 15px 0;
 }
-
 .nav-button {
   padding: 10px 20px;
   background-color: var(--nc-bg-2); /* 使用主题变量 */
@@ -77,28 +68,23 @@
   flex: 1; /* 平均分配空间 */
   box-sizing: border-box; /* 包括内边距和边框在元素的总宽度和高度中 */
 }
-
 @media (max-width: 600px) {
   .nav-button {
     font-size: 12px; /* 在小屏幕上减小字体大小 */
   }
 }
-
 .nav-button:hover {
   background-color: var(--nc-bg-3); /* 使用主题变量悬停 */
 }
-
 #prev-button {
   justify-content: flex-start; /* 左对齐文本 */
   text-align: left;
 }
-
 #next-button {
   justify-content: flex-end; /* 右对齐文本 */
   text-align: right;
 }
 </style>
-
 <!-- 使用新的容器包裹按钮 -->
 <div class="nav-buttons-container">
 {% if not art.ignored %}
@@ -114,9 +100,7 @@
   {% endif %}
 {% endif %}
 </div>
-
 <br>
-
 <script src="https://giscus.app/client.js"
         data-repo="yinan-c/pages-comment"
         data-repo-id="R_kgDOKTPNKg"
@@ -138,16 +122,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateGiscusTheme(theme) {
         const iframe = document.querySelector('iframe.giscus-frame');
         if (!iframe) return;
-        
-        iframe.contentWindow.postMessage({ 
-            giscus: { 
-                setConfig: { 
-                    theme: theme 
-                } 
-            } 
+        iframe.contentWindow.postMessage({
+            giscus: {
+                setConfig: {
+                    theme: theme
+                }
+            }
         }, 'https://giscus.app');
     }
-    
     // Initial update based on current theme
     function initialGiscusSetup() {
         const savedTheme = localStorage.getItem('theme');
@@ -157,10 +139,8 @@ document.addEventListener('DOMContentLoaded', function() {
             updateGiscusTheme('light');
         }
     }
-    
     // Set a timeout to ensure Giscus has loaded
     setTimeout(initialGiscusSetup, 1000);
-    
     // Listen for theme changes
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
@@ -174,24 +154,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-
 {% endblock %}
-
-
 {% block footer %}
-
 <div id="updated-at">
   <span>Created: {{ art.ctime[0:10] }}</span>
   <span>Updated: {{ art.mtime[0:10] }}</span>
 </div>
-
 <div id="footer">
   <div id="footer-home-link">
     <a href="index.html">&lt; Home</a>
     {% if not art.ignored %}
-    <a href="title-index.html#{{art.index_id}}">&lt; Index</a>
+    <a href="years.html#{{art.index_id}}">&lt; Timeline</a>
     |
     <a href="random.html">Random &gt;</a>
+    <a href="#" class="search-trigger">Search &gt;</a>
     {% endif %}
   </div>
   <p id="footer-body">
