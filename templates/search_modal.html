@@ -45,20 +45,13 @@
       searchModal.style.display = 'none';
       document.body.classList.remove('modal-open');
     }
-
-    // Attach event listeners for triggers (if they exist)
-    const searchButton = document.getElementById('search-button');
-    if (searchButton) {
-      searchButton.addEventListener('click', openSearchModal);
-    }
-    const searchText = document.getElementById('search-text');
-    if (searchText) {
-      searchText.addEventListener('click', function(e) {
+    // Bind click event for all elements that should trigger the search modal
+    document.querySelectorAll('.search-trigger, #search-button, #search-text').forEach(function(trigger) {
+      trigger.addEventListener('click', function(e) {
         e.preventDefault();
         openSearchModal();
       });
-    }
-
+    });
     // Close modal when clicking the close button
     const closeButton = document.querySelector('.macos-close-button');
     if (closeButton) {
